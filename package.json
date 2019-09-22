@@ -1,0 +1,23 @@
+{
+  "name": "mundart-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastikempken/mundart-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastikempken/mundart-app/issues"
+  },
+  "homepage": "https://github.com/bastikempken/mundart-app#readme"
+}
