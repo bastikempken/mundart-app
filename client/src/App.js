@@ -1,28 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import { connect } from "react-redux";
 import './App.css';
-import List from "./List";
+import SpinnerComponent from "./components/SpinnerComponent";
+import Header from "./Header";
+import "bootstrap/dist/css/bootstrap.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-            <List/>
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                <SpinnerComponent show={this.props.loading}>
+                    <Header/>
+                </SpinnerComponent>
+            </div>
+        );
+    }
 }
 
-export default App;
+const mapStateToProps = state => ({
+    loading: state.loading
+});
+
+export default connect(
+    mapStateToProps,
+    undefined
+)(App);
