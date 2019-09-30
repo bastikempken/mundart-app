@@ -3,3 +3,4 @@ node_modules/
 /mundart-app.iml
 /deploy-content.zip
 /deploy-credentials.json
+config.js

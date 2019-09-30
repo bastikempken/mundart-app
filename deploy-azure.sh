@@ -8,7 +8,7 @@ npm install
 npm run build-client
 
 # Zip
-zip -r $ZIP_FILE node_modules/ index.js client/build/ > /dev/null
+zip -r $ZIP_FILE src/ config.js node_modules/ index.js client/build/ > /dev/null
 
 # Extract credentials
 rawUserInput=$(cat deploy-credentials.json | jq '.id | tostring')
