@@ -10,6 +10,7 @@ const fbPostSuccess = payload => ({ type: LOAD_FB_SUCCESS, payload });
 
 function* facebookSaga(action) {
   try {
+    console.log("FBSAGA")
     const payload = yield call(axios.get, "/fbposts");
     yield put(fbPostSuccess(payload.data.posts));
   } catch (e) {
