@@ -13,9 +13,6 @@ const FbPost = ({ post }) => (
 class NewsComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loading: true
-    };
   }
 
   componentWillMount() {

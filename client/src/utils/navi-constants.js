@@ -7,3 +7,4 @@ export const fragen = "/fragen";
 export const tiergestuetzte_therapie = "/tiergestuetzte_therapie";
 export const anfahrt = "/anfahrt";
 export const kontakt = "/kontakt";
+export const error = "/error";

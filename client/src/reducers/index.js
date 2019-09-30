@@ -8,8 +8,6 @@ import { chunk } from "lodash";
 function rootReducer(
   state = {
     fbposts: [],
-    headerPictureLoaded: 0,
-    teamPictureLoaded: 0,
     loading: true
   },
   action

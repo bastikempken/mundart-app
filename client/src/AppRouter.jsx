@@ -1,6 +1,6 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router";
-import HomeComponent from "./content/HomeComponent";
+import {HomeComponent} from "./content/HomeComponent";
 import TeamComponent from "./content/TeamComponent";
 import NewsComponent from "./content/NewsComponent";
 import PraxisComponent from "./content/PraxisComponent";
@@ -11,6 +11,7 @@ import KontaktComponent from "./content/KontaktComponent";
 import history from "./utils/history";
 import * as naviConstants from "./utils/navi-constants";
 import { connect } from "react-redux";
+import {ErrorComponent} from "./ErrorComponent";
 
 class AppRouter extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class AppRouter extends React.Component {
           />
           <Route path={naviConstants.anfahrt} component={AnfahrtComponent} />
           <Route path={naviConstants.kontakt} component={KontaktComponent} />
+          <Route path={naviConstants.error} component={ErrorComponent} />
           <Route path={naviConstants.root} component={HomeComponent} />
         </Switch>
       </Router>
@@ -68,6 +70,9 @@ export const navigateToKontakt = () => {
 
 export const navigateToAnfahrt = () => {
   navigateTo(naviConstants.anfahrt);
+};
+export const navigateToError = () => {
+  navigateTo(naviConstants.error);
 };
 
 export default connect(

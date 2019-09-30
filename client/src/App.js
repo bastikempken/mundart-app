@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
 import "lightbox2/dist/css/lightbox.min.css"
-import SpinnerComponent from "./components/SpinnerComponent";
+import SpinnerComponent from "./SpinnerComponent";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.css";
 import AppNavigation from "./AppNavigation";
@@ -11,6 +11,13 @@ import AppRouter from "./AppRouter";
 import FooterComponent from "./FooterComponent";
 
 class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showError: false
+        };
+    }
 
     componentWillUpdate() {
         setTimeout(function () {
