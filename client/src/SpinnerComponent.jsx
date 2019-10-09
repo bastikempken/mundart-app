@@ -6,11 +6,9 @@ import {LOADING_OFF} from "./reducers/action-types";
 import {navigateToError} from "./AppRouter";
 
 const delay = 3000;
+const maxSecTimeoutForErrorPage = 4000;
 
 class SpinnerComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     handleCallback = () => {
       if(this.props.show){
@@ -19,13 +17,9 @@ class SpinnerComponent extends React.Component {
                     navigateToError();
                     this.props.loadingOff();
                 }
-          }, 4*1000);
+          }, maxSecTimeoutForErrorPage);
       }
     };
-
-    componentDidMount() {
-        this.handleCallback();
-    }
 
     componentDidUpdate() {
         this.handleCallback();
