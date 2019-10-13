@@ -4,5 +4,12 @@
   - [ ] Hunde Bild auf Team Seite 2 mal vorhanden
   - [ ] Logos auf Startleiste
   - [ ] Email in Express App
+  - [ ] Neue Mitarbeiterin ergänzen
+  - [ ] Impresseum und Datenschutz
+  - [ ] Tab Logo
+  - [ ] 
+
+
+
 
  

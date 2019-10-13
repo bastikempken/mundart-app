@@ -1,7 +1,11 @@
+const processEnv = require("./src/processEnv");
 const handleRequest = require("./src/facebook.js");
 const express = require('express');
 const path = require('path');
 const app = express();
+
+console.log('Is Dev Mode?: ',processEnv.isDev());
+
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
