@@ -8,6 +8,8 @@ import FragenComponent from "./content/FragenComponent";
 import TierTherapieComponent from "./content/TierTherapieComponent";
 import AnfahrtComponent from "./content/AnfahrtComponent";
 import KontaktComponent from "./content/KontaktComponent";
+import ImpressumComponent from "./content/ImpressumComponent";
+import DatenschutzComponent from "./content/DatenschutzComponent";
 import history from "./utils/history";
 import * as naviConstants from "./utils/navi-constants";
 import { connect } from "react-redux";
@@ -29,6 +31,8 @@ class AppRouter extends React.Component {
           <Route path={naviConstants.anfahrt} component={AnfahrtComponent} />
           <Route path={naviConstants.kontakt} component={KontaktComponent} />
           <Route path={naviConstants.error} component={ErrorComponent} />
+          <Route path={naviConstants.impressum} component={ImpressumComponent} />
+          <Route path={naviConstants.datenschutz} component={DatenschutzComponent} />
           <Route path={naviConstants.root} component={HomeComponent} />
         </Switch>
       </Router>
@@ -71,6 +75,15 @@ export const navigateToKontakt = () => {
 export const navigateToAnfahrt = () => {
   navigateTo(naviConstants.anfahrt);
 };
+
+export const navigateToImpressum = () => {
+  navigateTo(naviConstants.impressum);
+};
+
+export const navigateToDatenschutz = () => {
+  navigateTo(naviConstants.datenschutz);
+};
+
 export const navigateToError = () => {
   navigateTo(naviConstants.error);
 };

@@ -98,6 +98,22 @@ class AppNavigation extends React.Component {
                             >
                                 Kontakt
                             </Nav.Link>
+                            <Nav.Link
+                                className={this.handleActiveLink(naviConstants.impressum)}
+                                onClick={() =>
+                                    this.handleNaviClick(appRouter.navigateToImpressum)
+                                }
+                            >
+                                Impressum
+                            </Nav.Link>
+                            <Nav.Link
+                                className={this.handleActiveLink(naviConstants.datenschutz)}
+                                onClick={() =>
+                                    this.handleNaviClick(appRouter.navigateToDatenschutz)
+                                }
+                            >
+                                Datenschutz
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
