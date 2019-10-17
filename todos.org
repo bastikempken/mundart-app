@@ -7,7 +7,7 @@
   - [ ] Neue Mitarbeiterin ergänzen
   - [ ] Impresseum und Datenschutz
   - [ ] Tab Logo
-  - [ ] 
+  - [ ] Redux Logger nur in Dev
 
 
 

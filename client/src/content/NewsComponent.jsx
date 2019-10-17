@@ -17,10 +17,6 @@ class NewsComponent extends React.Component {
     this.props.requestFbPosts();
   }
 
-  shouldComponentUpdate() {
-    return this.state.loading;
-  }
-
   componentDidUpdate() {
     if (window.FB !== undefined) {
       window.FB.XFBML.parse(undefined, () => {

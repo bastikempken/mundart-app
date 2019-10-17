@@ -1,14 +1,23 @@
 const processEnv = require("./src/processEnv");
 const handleRequest = require("./src/facebook.js");
+const email = require("./src/email.js");
 const express = require('express');
+const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
+const config = require('./src/configWrapper');
 
 console.log('Is Dev Mode?: ',processEnv.isDev());
-
+// Log entries
+console.log('-------');
+Object.entries(config).forEach(entry => console.log(entry[0] + ' -> ' + entry[1]) );
+console.log('-------');
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
@@ -20,6 +29,14 @@ app.get('/api/getList', (req,res) => {
 app.get('/fbposts',(req,res) => {
     console.log("Received request for Facebook");
     handleRequest.handleRequest(res)
+        .then(()=> res.end())
+        .catch(()=>res.end())
+});
+
+app.post('/emailSubmit',(req,res) => {
+    console.log("Received request for email");
+    const body = req.body;
+    email.handleEmailRequest(res,req.body)
         .then(()=> res.end())
         .catch(()=>res.end())
 });

@@ -1,10 +1,10 @@
-const config = require("../config");
+const config = require("./configWrapper");
 const requestSync = require("sync-request");
 const facebookparser = require("./facebookparser");
 
 const callFacebookGraph = () => {
     const fbGraphUrl = "https://graph.facebook.com/logopaediekraehahn/posts";
-    const accessToken = config.fb_token;
+    const accessToken = config.fbToken;
     const fbResponse = requestSync(
         "GET",
         `${fbGraphUrl}?access_token=${accessToken}`
