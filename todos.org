@@ -1,11 +1,11 @@
 * TODOS
-  - [ ] Klick auf "Neuigkeiten", Timeout und Error Page anzeigen
+  - [X] Klick auf "Neuigkeiten", Timeout und Error Page anzeigen
   - [ ] Prettier einbauen
-  - [ ] Hunde Bild auf Team Seite 2 mal vorhanden
+  - [X] Hunde Bild auf Team Seite 2 mal vorhanden
   - [ ] Logos auf Startleiste
-  - [ ] Email in Express App
-  - [ ] Neue Mitarbeiterin ergänzen
-  - [ ] Impresseum und Datenschutz
+  - [X] Email in Express App
+  - [X] Neue Mitarbeiterin ergänzen
+  - [X] Impresseum und Datenschutz
   - [ ] Tab Logo
   - [ ] Redux Logger nur in Dev
 

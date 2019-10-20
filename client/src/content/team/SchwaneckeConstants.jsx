@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import Pcture from "../../media/team/schwanecke.jpg";
+import Picture from "../../media/team/schwanecke.jpg";
 
 export const title = "Franziska Schwanecke";
 
-export const picture = Pcture;
+export const picture = Picture;
 
 export const shortText = "Staatlich anerkannt Logopädin";
 

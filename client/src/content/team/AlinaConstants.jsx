@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import Pcture from "../../media/team/alina.jpg";
+import Picture from "../../media/team/alina.jpg";
 
 export const title = "Alina Krähahn";
 
-export const picture = Pcture;
+export const picture = Picture;
 
 export const shortText = `
 Logopädin\n

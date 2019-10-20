@@ -31,14 +31,16 @@ export const HomeComponent = () => (
                 />
             </div>
             <div style={{textAlign:"center",marginTop:"30px",marginBottom:"10px"}}>
-                <img
-                    src={DblLogo}
-                    width="200"
-                    href=""
-                    height=""
-                    className="d-inline-block align-top"
-                    alt="Dbl Logo"
-                />
+            <a href={'https://www.dbl-ev.de/'}>
+            <img
+                src={DblLogo}
+                width="200"
+                href=""
+                height=""
+                className="d-inline-block align-top"
+                alt="Dbl Logo"
+            />
+            </a>
             </div>
         </div>
 

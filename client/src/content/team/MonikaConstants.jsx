@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import Pcture from "../../media/team/monika.jpg";
+import Picture from "../../media/team/monika.jpg";
 
 export const title = "Monika Mayer";
 
-export const picture = Pcture;
+export const picture = Picture;
 
 export const shortText = "Sekretariat und Anmeldung";
 

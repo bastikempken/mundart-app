@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import Pcture from "../../media/team/schaefer.jpg";
+import Picture from "../../media/team/schaefer.jpg";
 
 export const title = "R. Schäfer";
 
-export const picture = Pcture;
+export const picture = Picture;
 
 export const shortText = `Sprachtherapeutin\nDiplom`;
 

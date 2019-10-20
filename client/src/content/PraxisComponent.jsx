@@ -15,7 +15,7 @@ import Picture_13 from "../media/praxis/picture_13_web.jpg";
 import Picture_14 from "../media/praxis/picture_14_web.jpg";
 import Picture_15 from "../media/praxis/picture_15_web.jpg";
 import Picture_16 from "../media/praxis/picture_16_web.jpg";
-import Picture_17 from "../media/praxis/picture_16_web.jpg";
+import Picture_17 from "../media/praxis/picture_17_web.jpg";
 
 import Picture_thumb_01 from "../media/praxis/thumb/picture_01_thumb.jpg";
 import Picture_thumb_02 from "../media/praxis/thumb/picture_02_thumb.jpg";
@@ -33,7 +33,7 @@ import Picture_thumb_13 from "../media/praxis/thumb/picture_13_thumb.jpg";
 import Picture_thumb_14 from "../media/praxis/thumb/picture_14_thumb.jpg";
 import Picture_thumb_15 from "../media/praxis/thumb/picture_15_thumb.jpg";
 import Picture_thumb_16 from "../media/praxis/thumb/picture_16_thumb.jpg";
-import Picture_thumb_17 from "../media/praxis/thumb/picture_16_thumb.jpg";
+import Picture_thumb_17 from "../media/praxis/thumb/picture_17_thumb.jpg";
 
 import { connect } from "react-redux";
 import lightbox2 from "lightbox2";

@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import Pcture from "../../media/team/wendland.jpg";
+import Picture from "../../media/team/wendland.jpg";
 
 export const title = "Karin Wendland";
 
-export const picture = Pcture;
+export const picture = Picture;
 
 export const shortText = "Logopädin";
 

@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import history from "./utils/history";
 import * as naviConstants from "./utils/navi-constants";
 import Sticky from "react-sticky-el";
-import MundartLogo from "./media/vector.svg";
+import MundartLogo from "./media/vector_navi.svg";
 
 class AppNavigation extends React.Component {
     handleNaviClick = navigate => {
@@ -112,7 +112,7 @@ class AppNavigation extends React.Component {
                                     this.handleNaviClick(appRouter.navigateToDatenschutz)
                                 }
                             >
-                                Datenschutz
+                                Datenschutzerkl&auml;rung
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
