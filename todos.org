@@ -2,12 +2,12 @@
   - [X] Klick auf "Neuigkeiten", Timeout und Error Page anzeigen
   - [ ] Prettier einbauen
   - [X] Hunde Bild auf Team Seite 2 mal vorhanden
-  - [ ] Logos auf Startleiste
+  - [X] Logos auf Startleiste
   - [X] Email in Express App
   - [X] Neue Mitarbeiterin ergänzen
   - [X] Impresseum und Datenschutz
-  - [ ] Tab Logo
-  - [ ] Redux Logger nur in Dev
+  - [X] Tab Logo
+  - [X] Redux Logger nur in Dev
 
 
 

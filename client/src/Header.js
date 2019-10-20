@@ -12,100 +12,100 @@ import { connect } from "react-redux";
 import { LOADING_OFF } from "./reducers/action-types";
 
 class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            pictureLoaded: 0
-        };
-    }
-
-    sendPicLoad = () => {
-        this.setState({ pictureLoaded: this.state.pictureLoaded + 1 }, () => {
-            if (this.state.pictureLoaded === 8) {
-                this.props.sendPicLoad();
-            }
-        });
+  constructor(props) {
+    super(props);
+    this.state = {
+      pictureLoaded: 0
     };
+  }
 
-    render() {
-        return (
-            <Carousel>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_01}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_02}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_03}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_04}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_05}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_06}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_07}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={Picture_08}
-                        alt=""
-                        onLoad={this.sendPicLoad}
-                    />
-                </Carousel.Item>
-            </Carousel>
-        );
-    }
+  sendPicLoad = () => {
+    this.setState({ pictureLoaded: this.state.pictureLoaded + 1 }, () => {
+      if (this.state.pictureLoaded === 8) {
+        this.props.sendPicLoad();
+      }
+    });
+  };
+
+  render() {
+    return (
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_01}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_02}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_03}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_04}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_05}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_06}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_07}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Picture_08}
+            alt=""
+            onLoad={this.sendPicLoad}
+          />
+        </Carousel.Item>
+      </Carousel>
+    );
+  }
 }
 
 const mapDispatchToProps = dispatch => ({
-    sendPicLoad: () => {
-        dispatch({ type: LOADING_OFF });
-    }
+  sendPicLoad: () => {
+    dispatch({ type: LOADING_OFF });
+  }
 });
 
 export default connect(
-    undefined,
-    mapDispatchToProps
+  undefined,
+  mapDispatchToProps
 )(Header);

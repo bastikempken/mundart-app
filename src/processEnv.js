@@ -1,1 +1,1 @@
-module.exports.isDev = () => process.env.DEV === 'true';
+module.exports.isDev = () => process.env.DEV === "true";

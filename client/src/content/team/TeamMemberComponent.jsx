@@ -39,7 +39,7 @@ class TeamMemberComponent extends React.Component {
       <Row>
         <Col sm={4}>
           <img
-            alt=''
+            alt=""
             src={this.props.constants.picture}
             className={"img-thumbnail"}
             onLoad={this.props.picLoadedCallback}

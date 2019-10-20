@@ -1,5 +1,5 @@
 const config = require("../config");
-const isDev = process.env.DEV === 'true';
+const isDev = process.env.DEV === "true";
 
 const fbToken = config.fb_token;
 const mailHost = config.mail_host;
@@ -10,11 +10,11 @@ const praxisAddress = isDev ? config.dev.praxis_address : config.praxis_address;
 const praxisServiceAddress = config.praxis_service_address;
 
 module.exports = {
-    fbToken,
-    mailHost,
-    mailPort,
-    mailUsername,
-    mailPassword,
-    praxisAddress,
-    praxisServiceAddress
+  fbToken,
+  mailHost,
+  mailPort,
+  mailUsername,
+  mailPassword,
+  praxisAddress,
+  praxisServiceAddress
 };

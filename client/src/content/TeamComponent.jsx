@@ -33,21 +33,42 @@ class TeamComponent extends React.Component {
     this.setState(state => {
       return {
         picLoaded: state.picLoaded + 1
-      }
-    })
-  }
+      };
+    });
+  };
 
   render() {
     return (
       <Container>
         <h1>Team</h1>
-        <TeamMemberComponent constants={alinaConstants} picLoadedCallback={this.picLoadedCallback} />
-        <TeamMemberComponent constants={wendlandConstants} picLoadedCallback={this.picLoadedCallback} />
-        <TeamMemberComponent constants={schwaneckeConstants} picLoadedCallback={this.picLoadedCallback} />
-        <TeamMemberComponent constants={schaeferConstants} picLoadedCallback={this.picLoadedCallback} />
-        <TeamMemberComponent constants={wibkeConstants} picLoadedCallback={this.picLoadedCallback} />
-        <TeamMemberComponent constants={monikaConstants} picLoadedCallback={this.picLoadedCallback} />
-        <TeamMemberComponent constants={hundeConstants} picLoadedCallback={this.picLoadedCallback} />
+        <TeamMemberComponent
+          constants={alinaConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={wendlandConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={schwaneckeConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={schaeferConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={wibkeConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={monikaConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={hundeConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
       </Container>
     );
   }

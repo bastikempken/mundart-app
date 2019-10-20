@@ -8,14 +8,22 @@ const sagaMiddleware = createSagaMiddleware();
 
 const middlewares = [];
 
-middlewares.push(logger);
+const isDev = process.env.NODE_ENV === "development";
+
+if (isDev) {
+  middlewares.push(logger);
+}
+
 middlewares.push(sagaMiddleware);
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers =
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ && isDev
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    : compose;
 
 const store = createStore(
-    rootReducer,
-    composeEnhancers(applyMiddleware(...middlewares))
+  rootReducer,
+  composeEnhancers(applyMiddleware(...middlewares))
 );
 
 Object.keys(sagas).forEach(saga => sagaMiddleware.run(sagas[saga]));

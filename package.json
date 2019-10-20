@@ -9,12 +9,15 @@
     "nodemailer": "^6.3.1",
     "sync-request": "^6.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "1.18.2"
+  },
   "scripts": {
     "start": "node index.js",
     "start-dev": "DEV=true node index.js",
     "start-client": "cd ./client && npm run start",
-    "build-client": "cd ./client && npm run build"
+    "build-client": "cd ./client && npm run build",
+    "prettier": "./node_modules/prettier/bin-prettier.js --write '{src,client/src}/**/*.{js,jsx}'"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/bastikempken/mundart-app/issues"
   },
-  "homepage": "https://github.com/bastikempken/mundart-app#readme"
+  "homepage": "https://github.com/bastikempken/mundart-app#readme",
+  "prettier": {
+
+  }
 }

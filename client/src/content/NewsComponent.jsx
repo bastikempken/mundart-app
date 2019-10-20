@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { LOADING_ON, LOADING_OFF,LOAD_FB } from "../reducers/action-types";
+import { LOADING_ON, LOADING_OFF, LOAD_FB } from "../reducers/action-types";
 
 const FbPost = ({ post }) => (
   <div
@@ -11,7 +11,6 @@ const FbPost = ({ post }) => (
 );
 
 class NewsComponent extends React.Component {
-
   componentWillMount() {
     this.props.loadingOn();
     this.props.requestFbPosts();

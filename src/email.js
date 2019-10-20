@@ -2,16 +2,17 @@ const nodemailer = require("nodemailer");
 const config = require("./configWrapper");
 const Email = require("./email-dto.js").Email;
 
-const createTransporter = () => nodemailer.createTransport({
-  port: config.mailPort,
-  host: config.mailHost,
-  auth: {
-    user: config.mailUsername,
-    pass: config.mailPassword
-  }
-});
+const createTransporter = () =>
+  nodemailer.createTransport({
+    port: config.mailPort,
+    host: config.mailHost,
+    auth: {
+      user: config.mailUsername,
+      pass: config.mailPassword
+    }
+  });
 
-const sendEmail = async (json) => {
+const sendEmail = async json => {
   try {
     const transporter = createTransporter();
     const optionsToPraxis = sendToPraxis(json);
@@ -19,13 +20,13 @@ const sendEmail = async (json) => {
     console.log("SUCCESS > Email To Praxis");
     const optionsToCustomer = sendToCustomer(json);
     await transporter.sendMail(optionsToCustomer);
-    console.log("SUCCESS > Email To Customer")
+    console.log("SUCCESS > Email To Customer");
   } catch (error) {
-    console.log("ERROR send email", error)
+    console.log("ERROR send email", error);
   }
 };
 
-const sendToPraxis = (data) => {
+const sendToPraxis = data => {
   const email = new Email.Builder()
     .from(config.praxisServiceAddress)
     .to(config.praxisAddress)
@@ -36,7 +37,7 @@ const sendToPraxis = (data) => {
   return mapEmailToOptions(email);
 };
 
-const sendToCustomer = (data) => {
+const sendToCustomer = data => {
   const email = new Email.Builder()
     .from(config.praxisServiceAddress)
     .to(data.sender)
@@ -44,11 +45,11 @@ const sendToCustomer = (data) => {
     .subject("Bestätigung Ihrer Kontaktanfrage auf mundart-sprachtherapie.de")
     .content(
       "Hallo " +
-      data.name +
-      ",\n\nvielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.\nIn dringenden Fällen erreichen Sie uns auch telefonisch unter: +491777435491.\n" +
-      "\n\nMit freundlichen Grüßen\nIhr mundart-Team" +
-      "\n\nUrsprüngliche Nachricht:\n\n" +
-      data.content
+        data.name +
+        ",\n\nvielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.\nIn dringenden Fällen erreichen Sie uns auch telefonisch unter: +491777435491.\n" +
+        "\n\nMit freundlichen Grüßen\nIhr mundart-Team" +
+        "\n\nUrsprüngliche Nachricht:\n\n" +
+        data.content
     )
     .build();
   return mapEmailToOptions(email);

@@ -1,8 +1,4 @@
-import {
-  LOAD_FB_SUCCESS,
-  LOADING_ON,
-  LOADING_OFF
-} from "./action-types";
+import { LOAD_FB_SUCCESS, LOADING_ON, LOADING_OFF } from "./action-types";
 import { chunk } from "lodash";
 
 function rootReducer(
