@@ -1,6 +1,6 @@
 * TODOS
   - [X] Klick auf "Neuigkeiten", Timeout und Error Page anzeigen
-  - [ ] Prettier einbauen
+  - [X] Prettier einbauen
   - [X] Hunde Bild auf Team Seite 2 mal vorhanden
   - [X] Logos auf Startleiste
   - [X] Email in Express App
@@ -8,6 +8,9 @@
   - [X] Impresseum und Datenschutz
   - [X] Tab Logo
   - [X] Redux Logger nur in Dev
+  - [ ] Winston Logger für Docker
+  - [ ] Docker Image to private Repo
+  - [ ] Umgebungsvariable aus Docker-(Config)
 
 
 
