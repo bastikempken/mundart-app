@@ -7,7 +7,7 @@ COPY index.js .
 COPY src src/
 RUN mkdir /usr/src/app/logs/
 # ---- config -----
-COPY config.js .
+#COPY config.js .
 # ---- client ------
 COPY client/build client/build/
 EXPOSE 3001
