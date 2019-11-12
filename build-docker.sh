@@ -10,7 +10,7 @@ readonly VERSION=$(node -p -e "require('./package.json').version")
 #--
 docker build -t $CONATAINER_TAG:$VERSION .
 #--
-readonly $CONATAINER_ID=$(docker images --filter=reference=$CONATAINER_TAG:$VERSION --format "{{.ID}}")
+readonly CONATAINER_ID=$(docker images --filter=reference=$CONATAINER_TAG:$VERSION --format "{{.ID}}")
 
 docker tag $CONATAINER_ID $REMOTE_REPO:$VERSION
 
