@@ -28,7 +28,7 @@ class ImpressumComponent extends React.Component {
           <br />
           107/5097/2761
         </p>
-        <h2>Angaben zur Berufshaftpflichtversicherung</h2>
+        <h2>Angaben zur Berufs&shy;haft&shy;pflicht&shy;ver&shy;sicherung</h2>
         <p>
           <strong>Name und Sitz des Versicherers:</strong>
           <br />
