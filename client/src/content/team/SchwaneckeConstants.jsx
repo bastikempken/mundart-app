@@ -37,6 +37,7 @@ export const text = (
       <li>Therapie bei Lippen-, Kiefer- und Gaumenspalten</li>
       <li>digitale Medien in der Sprachtherapie</li>
       <li>Aphasien</li>
+      <li>Therapie von Sprachentwicklungsst&ouml;rungen im mehrsprachigen Kontext</li>
     </ul>
   </Fragment>
 );
