@@ -4,6 +4,10 @@ set -e
 readonly CONATAINER_TAG=mundart-app
 readonly REMOTE_REPO=sebastiankem/$CONATAINER_TAG
 
+# Build Client
+npm run client-install
+npm run client-build
+
 npm version major
 
 readonly VERSION=$(node -p -e "require('./package.json').version")
