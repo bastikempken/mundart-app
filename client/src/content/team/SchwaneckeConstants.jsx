@@ -9,35 +9,35 @@ export const shortText = "Staatlich anerkannt Logopädin";
 
 export const text = (
   <Fragment>
-    geb. 1974 in Essen
+    geb. 1992 in Wesel
     <br />
     <br />
     <strong>Ausbildung:</strong>
     <ul>
       <li>
-        Studium an der technischen Universit&auml;t Dortmund mit dem Abschluss
-        Diplom P&auml;dagogin/Sprachtherapeutin
+        Ausbildung zur Logop&auml;din an der &bdquo;Schule f&uuml;r
+        Logop&auml;die&ldquo; der AWO EN in Hattingen
       </li>
-      <li>Diplom P&auml;dagogin/Sprachtherapeutin</li>
-      <li>Rehabilitationsp&auml;dagogik/Sprachtherapie</li>
     </ul>
     <strong>Fortbildungen:</strong>
     <ul>
-      <li>phonologische Diagnostik und Therapie</li>
-      <li>F&ouml;rderung der phonologischen Bewusstheit</li>
-      <li>Therapie phonologischer St&ouml;rungen nach Fox</li>
-      <li>LRS-Fr&uuml;hf&ouml;rderung</li>
-      <li>LRS</li>
-      <li>zentral auditive Verarbeitungs- und Wahrnehmungsst&ouml;rung</li>
-      <li>myofunktionelle Therapie</li>
-      <li>unterst&uuml;tzte Kommunikation</li>
-      <li>neurologisch bedingte Schluckst&ouml;rungen</li>
-      <li>Therapie mit wahrnehmungsgest&ouml;rten Kindern</li>
-      <li>Mutismus</li>
-      <li>Therapie bei Lippen-, Kiefer- und Gaumenspalten</li>
-      <li>digitale Medien in der Sprachtherapie</li>
-      <li>Aphasien</li>
-      <li>Therapie von Sprachentwicklungsst&ouml;rungen im mehrsprachigen Kontext</li>
+      <li>
+        Logop&auml;die bei Demenz - Therapeutische Konzepte f&uuml;r die
+        personenzentrierte Arbeit bei demenzbedingten Sprachst&ouml;rungen
+      </li>
+      <li>
+        Behandlung von fazialen und intra- oralen Paresen in Anlehnung an die
+        Propriozeptive Neuromuskul&auml;re Fazilitation (PNF)
+      </li>
+      <li>
+        Fr&uuml;hdiagnostik von Risikofaktoren f&uuml;r das Lesen,- Schreiben
+        und Rechnenlernen und gezielte pr&auml;ventive F&ouml;rderung
+      </li>
+      <li>Dysgrammatismustherapie - leichter als gedacht</li>
+      <li>
+        Taping für Logop&auml;den- Der Einsatz von elastischem Tape in der
+        logop&auml;dischen Therapie
+      </li>
     </ul>
   </Fragment>
 );

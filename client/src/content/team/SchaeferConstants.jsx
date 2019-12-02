@@ -37,6 +37,10 @@ export const text = (
       <li>Therapie bei Lippen-, Kiefer- und Gaumenspalten</li>
       <li>digitale Medien in der Sprachtherapie</li>
       <li>Aphasien</li>
+      <li>
+        Die integrierte Myofunktionstherapie nach Passon in enger Zusammenarbeit
+        mit Zahn&auml;rzten und Kieferorthop&auml;den
+      </li>
     </ul>
   </Fragment>
 );

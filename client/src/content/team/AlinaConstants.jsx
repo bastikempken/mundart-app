@@ -42,6 +42,11 @@ export const text = (
         Hier kommen die kleinsten zu Wort - Sprachbildung f&ouml;r U-3 Kinder
       </li>
       <li>Kompaktseminar: Kieler Leseaufbau und Kieler Rechtschreibaufbau</li>
+      <li>
+        Die integrierte Myofunktionstherapie nach Passon in enger Zusammenarbeit
+        mit Zahn&auml;rzten und Kieferorthop&auml;den
+      </li>
+      <li>Logop&auml;dische Anwendungen mit dem NOVAFON</li>
     </ul>
   </Fragment>
 );
