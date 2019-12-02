@@ -19,3 +19,7 @@ readonly CONATAINER_ID=$(docker images --filter=reference=$CONATAINER_TAG:$VERSI
 docker tag $CONATAINER_ID $REMOTE_REPO:$VERSION
 
 docker push $REMOTE_REPO
+
+tag_description='DOCKER_BUILD_'$(date +'%Y_%m_%d_%H_%M_%S')
+git tag -a $tag_description -m "'"$tag_description"'"
+git push origin $tag_description
