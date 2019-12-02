@@ -29,4 +29,4 @@ docker push $REMOTE_REPO
 #------------------------
 # push git
 #------------------------
-git push origin $VERSION
+git push origin v$VERSION
