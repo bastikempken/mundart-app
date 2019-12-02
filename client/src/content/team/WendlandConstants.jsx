@@ -5,7 +5,7 @@ export const title = "Karin Wendland";
 
 export const picture = Picture;
 
-export const shortText = "Logopädin";
+export const shortText = "Logopädin (zurzeit in Elternzeit)";
 
 export const text = (
   <Fragment>

@@ -43,8 +43,8 @@ export const text = (
       </li>
       <li>Kompaktseminar: Kieler Leseaufbau und Kieler Rechtschreibaufbau</li>
       <li>
-        Die integrierte Myofunktionstherapie nach Passon in enger Zusammenarbeit
-        mit Zahn&auml;rzten und Kieferorthop&auml;den
+        Die integrierte Myo&shy;funktions&shy;therapie nach Passon in enger
+        Zusammenarbeit mit Zahn&auml;rzten und Kieferorthop&auml;den
       </li>
       <li>Logop&auml;dische Anwendungen mit dem NOVAFON</li>
     </ul>

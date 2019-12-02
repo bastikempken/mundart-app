@@ -5,7 +5,7 @@ export const title = "Franziska Schwanecke";
 
 export const picture = Picture;
 
-export const shortText = "Staatlich anerkannt Logopädin";
+export const shortText = "Staatlich anerkannte Logopädin";
 
 export const text = (
   <Fragment>
@@ -37,6 +37,10 @@ export const text = (
       <li>
         Taping für Logop&auml;den- Der Einsatz von elastischem Tape in der
         logop&auml;dischen Therapie
+      </li>
+      <li>
+        Therapie von Sprach&shy;ent&shy;wicklungs&shy;st&ouml;rungen im
+        mehrsprachigen Kontext
       </li>
     </ul>
   </Fragment>
