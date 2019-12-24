@@ -13,8 +13,6 @@ import Picture_11 from "../media/praxis/picture_11_web.jpg";
 import Picture_12 from "../media/praxis/picture_12_web.jpg";
 import Picture_13 from "../media/praxis/picture_13_web.jpg";
 import Picture_14 from "../media/praxis/picture_14_web.jpg";
-import Picture_15 from "../media/praxis/picture_15_web.jpg";
-import Picture_16 from "../media/praxis/picture_16_web.jpg";
 import Picture_17 from "../media/praxis/picture_17_web.jpg";
 
 import Picture_thumb_01 from "../media/praxis/thumb/picture_01_thumb.jpg";
@@ -31,8 +29,6 @@ import Picture_thumb_11 from "../media/praxis/thumb/picture_11_thumb.jpg";
 import Picture_thumb_12 from "../media/praxis/thumb/picture_12_thumb.jpg";
 import Picture_thumb_13 from "../media/praxis/thumb/picture_13_thumb.jpg";
 import Picture_thumb_14 from "../media/praxis/thumb/picture_14_thumb.jpg";
-import Picture_thumb_15 from "../media/praxis/thumb/picture_15_thumb.jpg";
-import Picture_thumb_16 from "../media/praxis/thumb/picture_16_thumb.jpg";
 import Picture_thumb_17 from "../media/praxis/thumb/picture_17_thumb.jpg";
 
 import { connect } from "react-redux";
@@ -106,7 +102,14 @@ class PraxisComponent extends React.Component {
         >
           <img alt="" className={"example-image"} src={Picture_thumb_07} />
         </a>
-
+          <a
+              alt=""
+              href={Picture_17}
+              data-lightbox="roadtrip"
+              data-title="Spielecke"
+          >
+              <img alt="" className={"example-image"} src={Picture_thumb_17} />
+          </a>
         <a
           alt=""
           href={Picture_08}
@@ -148,28 +151,6 @@ class PraxisComponent extends React.Component {
 
         <a alt="" href={Picture_14} data-lightbox="roadtrip" data-title="">
           <img alt="" className={"example-image"} src={Picture_thumb_14} />
-        </a>
-
-        <a alt="" href={Picture_15} data-lightbox="roadtrip" data-title="Team">
-          <img alt="" className={"example-image"} src={Picture_thumb_15} />
-        </a>
-
-        <a
-          alt=""
-          href={Picture_16}
-          data-lightbox="roadtrip"
-          data-title="Therapiebegleithunde Sookie und Lino"
-        >
-          <img alt="" className={"example-image"} src={Picture_thumb_16} />
-        </a>
-
-        <a
-          alt=""
-          href={Picture_17}
-          data-lightbox="roadtrip"
-          data-title="Spielecke"
-        >
-          <img alt="" className={"example-image"} src={Picture_thumb_17} />
         </a>
       </>
     );
