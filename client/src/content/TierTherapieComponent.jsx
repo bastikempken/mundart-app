@@ -10,12 +10,10 @@ class TierTherapieComponent extends React.Component {
         <p>
           In unserer Praxis haben wir zwei Therapiebegleithunde. Sie hören auf
           die Namen Lino (Labrador – Australian Sheperd Mix) und Sookie (Nova
-          Scotia Duck Tolling Retriever). Lino ist bereits ausgebildeter
-          Therapiebegleithund, Sookie befindet sich seit Ende 2017 in der
-          Ausbildung. Falls es gewünscht ist oder eine Indikation von unserer
-          Seite zur tiergestützten Therapie besteht, besprechen wir dies mit
-          allen Beteiligten. Wenn sich alle über diese tierische Zusammenarbeit
-          freuen, steht dem nichts mehr im Wege.
+          Scotia Duck Tolling Retriever). Falls es gewünscht ist oder eine
+          Indikation von unserer Seite zur tiergestützten Therapie besteht,
+          besprechen wir dies mit allen Beteiligten. Wenn sich alle über diese
+          tierische Zusammenarbeit freuen, steht dem nichts mehr im Wege.
         </p>
         <p>
           Aber auch Leute mit Hundehaarallergie müssen unsere Praxis nicht
