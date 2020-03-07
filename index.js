@@ -19,12 +19,6 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-// An api endpoint that returns a short list of items
-app.get('/api/getList', (req,res) => {
-    var list = ["item1", "item2", "item3","item4"];
-    res.json(list);
-    console.log('Sent list of items');
-});
 
 app.get('/fbposts',(req,res) => {
     console.log("Received request for Facebook");
