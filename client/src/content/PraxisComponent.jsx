@@ -102,14 +102,14 @@ class PraxisComponent extends React.Component {
         >
           <img alt="" className={"example-image"} src={Picture_thumb_07} />
         </a>
-          <a
-              alt=""
-              href={Picture_17}
-              data-lightbox="roadtrip"
-              data-title="Spielecke"
-          >
-              <img alt="" className={"example-image"} src={Picture_thumb_17} />
-          </a>
+        <a
+          alt=""
+          href={Picture_17}
+          data-lightbox="roadtrip"
+          data-title="Spielecke"
+        >
+          <img alt="" className={"example-image"} src={Picture_thumb_17} />
+        </a>
         <a
           alt=""
           href={Picture_08}

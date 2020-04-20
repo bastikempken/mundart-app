@@ -20,6 +20,47 @@ export const HomeComponent = () => (
         kommunizieren. Daf&uuml;r steht Ihnen unser Team von ausgebildeten
         Logop&auml;den gerne unterst&uuml;tzend zur Seite.
       </p>
+      <hr/>
+      <div>
+        <p className={"text-center"}><b>CORONAVIRUS SCHUTZMAßNAHMEN</b></p>
+        <p>
+          Da Experten davon ausgehen, dass uns die Corona-Krise noch mindestens
+          1 Jahr begleiten wird, hier einige Punkte, wie wir in unserer Praxis
+          auf die neue Situation reagieren:
+          <ul>
+            <li>
+              Bitte sofort nach Eintritt in die Praxis die
+              <b>Hände ca. 30 Sek. mit Wasser und Seife waschen</b> oder mit dem
+              von uns bereit gestellten Desinfektionsmitel desinfizieren.
+            </li>
+            <li>
+              <b>Fassen Sie sich nicht ins Gesicht!</b>
+            </li>
+            <li>
+              <b>Niesen oder husten Sie in die Armbeuge!</b>
+            </li>
+            <li>
+              <b>Abstand halten!</b> Gerade im Wartebereich bitte darauf achten.
+            </li>
+            <li>
+              Kommen Sie <b>pünktlich zum vereinbarten Termin</b>. Bringen Sie
+              keine Geschwisterkinder mit und höchstens eine Begleitperson pro
+              zu therapierendes Kind.
+            </li>
+            <li>
+              Bleiben Sie <b>zuhause</b> wenn sie direkten Kontakt zu einer
+              infizierten Person hatten oder folgende Symptome aufweisen:
+              Halskratzen, Husten, Fieber.
+            </li>
+            <li>
+              Wenn Sie sich krank fühlen, rufen Sie entweder Ihren <b>Hausarzt</b> an <b>oder 116 117</b>
+            </li>
+          </ul>
+          Wir bedanken uns bei ihrer Mithilfe!
+Logopädische Praxis Krähahn
+
+        </p>
+      </div>
       <div style={{ textAlign: "center" }}>
         <img
           src={MundartLogo}
