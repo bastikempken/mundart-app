@@ -20,7 +20,7 @@ export const HomeComponent = () => (
         kommunizieren. Daf&uuml;r steht Ihnen unser Team von ausgebildeten
         Logop&auml;den gerne unterst&uuml;tzend zur Seite.
       </p>
-      <hr/>
+      <hr />
       <div>
         <p className={"text-center"}><b>CORONAVIRUS SCHUTZMAßNAHMEN</b></p>
         <p>
@@ -29,8 +29,7 @@ export const HomeComponent = () => (
           auf die neue Situation reagieren:
           <ul>
             <li>
-              Bitte sofort nach Eintritt in die Praxis die
-              <b>Hände ca. 30 Sek. mit Wasser und Seife waschen</b> oder mit dem
+              Bitte sofort nach Eintritt in die Praxis die <b>Hände ca. 30 Sek. mit Wasser und Seife waschen</b> oder mit dem
               von uns bereit gestellten Desinfektionsmitel desinfizieren.
             </li>
             <li>
