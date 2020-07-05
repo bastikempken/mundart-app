@@ -121,9 +121,7 @@ class KontaktComponent extends React.Component {
         </p>
         <h2>Öffnungszeiten</h2>
         <p>
-          Montag - Donnerstag: 08:00 – 18:30
-          <br />
-          Freitag: 08:00 – 17:00
+          Montag - Freitag: Termine nach Absprache
           <br /> Samstag: geschlossen
           <br /> Sonntag: geschlossen
         </p>
