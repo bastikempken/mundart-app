@@ -4,3 +4,4 @@ node_modules/
 /deploy-content.zip
 /deploy-credentials.json
 config.js
+.idea/
