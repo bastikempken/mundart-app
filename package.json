@@ -16,9 +16,9 @@
     "prettier": "1.18.2"
   },
   "scripts": {
-    "build": "netlify-lambda build src",
-    "start": "node index.js",
-    "start-dev": "DEV=true node index.js",
+    "build": "netlify-lambda build express",
+    "start": "node local-server.js",
+    "start-dev": "DEV=true node local-server.js",
     "client-install": "cd ./client && npm install",
     "client-build": "cd ./client && npm run build",
     "client-start": "cd ./client && npm run start",

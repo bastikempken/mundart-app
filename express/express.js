@@ -1,12 +1,13 @@
-const processEnv = require("../processEnv");
-const handleRequest = require("../facebook.js");
-const email = require("../email.js");
+const processEnv = require("../src/processEnv");
+const handleRequest = require("../src/facebook.js");
+const email = require("../src/email.js");
 const express = require("express");
 const serverless = require("serverless-http");
 const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
-const config = require("../configWrapper");
+const config = require("../src/configWrapper");
+const router = express.Router();
 
 console.log("Is Dev Mode?: ", processEnv.isDev());
 // Log entries
@@ -22,7 +23,7 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.get("/fbposts", (req, res) => {
+router.get("/fbposts", (req, res) => {
   console.log("Received request for Facebook");
   handleRequest
     .handleRequest(res)
@@ -30,7 +31,7 @@ app.get("/fbposts", (req, res) => {
     .catch(() => res.end());
 });
 
-app.post("/emailSubmit", (req, res) => {
+router.post("/emailSubmit", (req, res) => {
   console.log("Received request for email");
   const body = req.body;
   email
@@ -40,9 +41,11 @@ app.post("/emailSubmit", (req, res) => {
 });
 
 // Handles any requests that don't match the ones above
-app.get("*", (req, res) => {
+router.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
+
+app.use("/.netlify/functions/express", router); // path must route to lambda
 
 module.exports = app;
 module.exports.handler = serverless(app);
