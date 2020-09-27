@@ -19,8 +19,8 @@
     "build": "netlify-lambda build express",
     "start": "node local-server.js",
     "start-dev": "DEV=true node local-server.js",
-    "client-install": "cd ./client && npm install",
-    "client-build": "cd ./client && npm run build",
+    "client-install": "npm --prefix ./client install",
+    "client-build": "npm --prefix ./client run build",
     "client-start": "cd ./client && npm run start",
     "prettier": "./node_modules/prettier/bin-prettier.js --write '{src,client/src}/**/*.{js,jsx}'"
   },
