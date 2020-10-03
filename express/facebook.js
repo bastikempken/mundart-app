@@ -16,14 +16,14 @@ const callFacebookGraph = () => {
 const buildSuccessResponse = (res, posts) => {
   const header = {
     header: {
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    },
   };
   res.writeHead(200, header);
   res.write(posts);
 };
 
-module.exports.handleRequest = async res => {
+module.exports.handleRequest = async (res) => {
   try {
     const posts = callFacebookGraph();
     return buildSuccessResponse(res, posts);

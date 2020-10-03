@@ -1,12 +1,12 @@
 const processEnv = require("../src/processEnv");
-const handleRequest = require("../src/facebook.js");
+const handleRequest = require("./facebook.js");
 const email = require("../src/email.js");
 const express = require("express");
 const serverless = require("serverless-http");
 const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
-const config = require("../src/configWrapper");
+const config = require("./configWrapper");
 const router = express.Router();
 
 console.log("Is Dev Mode?: ", processEnv.isDev());

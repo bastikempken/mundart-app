@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const config = require("./configWrapper");
+const config = require("../express/configWrapper");
 const Email = require("./email-dto.js").Email;
 
 const createTransporter = () =>
@@ -8,11 +8,11 @@ const createTransporter = () =>
     host: config.mailHost,
     auth: {
       user: config.mailUsername,
-      pass: config.mailPassword
-    }
+      pass: config.mailPassword,
+    },
   });
 
-const sendEmail = async json => {
+const sendEmail = async (json) => {
   try {
     const transporter = createTransporter();
     const optionsToPraxis = sendToPraxis(json);
@@ -26,7 +26,7 @@ const sendEmail = async json => {
   }
 };
 
-const sendToPraxis = data => {
+const sendToPraxis = (data) => {
   const email = new Email.Builder()
     .from(config.praxisServiceAddress)
     .to(config.praxisAddress)
@@ -37,7 +37,7 @@ const sendToPraxis = data => {
   return mapEmailToOptions(email);
 };
 
-const sendToCustomer = data => {
+const sendToCustomer = (data) => {
   const email = new Email.Builder()
     .from(config.praxisServiceAddress)
     .to(data.sender)
@@ -55,13 +55,13 @@ const sendToCustomer = data => {
   return mapEmailToOptions(email);
 };
 
-const mapEmailToOptions = email => {
+const mapEmailToOptions = (email) => {
   return {
     from: email.from,
     to: email.to,
     replyTo: email.replyTo,
     subject: email.subject,
-    text: email.content
+    text: email.content,
   };
 };
 
