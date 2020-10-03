@@ -1,6 +1,6 @@
-const processEnv = require("../src/processEnv");
+//const processEnv = require("../src/processEnv");
 const handleRequest = require("./facebook.js");
-const email = require("../src/email.js");
+//const email = require("../src/email.js");
 const express = require("express");
 const serverless = require("serverless-http");
 const bodyParser = require("body-parser");
@@ -9,7 +9,7 @@ const app = express();
 const config = require("./configWrapper");
 const router = express.Router();
 
-console.log("Is Dev Mode?: ", processEnv.isDev());
+//.log("Is Dev Mode?: ", processEnv.isDev());
 // Log entries
 console.log("-------");
 Object.entries(config).forEach((entry) =>
@@ -32,12 +32,12 @@ router.get("/fbposts", (req, res) => {
 });
 
 router.post("/emailSubmit", (req, res) => {
-  console.log("Received request for email");
-  const body = req.body;
-  email
-    .handleEmailRequest(res, req.body)
-    .then(() => res.end())
-    .catch(() => res.end());
+  // console.log("Received request for email");
+  // const body = req.body;
+  // email
+  //  .handleEmailRequest(res, req.body)
+  //  .then(() => res.end())
+  //  .catch(() => res.end());
 });
 
 // Handles any requests that don't match the ones above
