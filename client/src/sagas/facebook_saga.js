@@ -10,7 +10,7 @@ const fbPostSuccess = (payload) => ({ type: LOAD_FB_SUCCESS, payload });
 
 function* facebookSaga(action) {
   try {
-    const payload = yield call(axios.get, "/fbposts");
+    const payload = yield call(axios.get, "/api/fbposts");
     yield put(fbPostSuccess(payload.data.posts));
   } catch (e) {
     yield put({ type: LOAD_FB_ERROR });
