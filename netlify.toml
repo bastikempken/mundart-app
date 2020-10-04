@@ -1,3 +1,8 @@
 [build]
   command = "npm install && npm run build && npm run client-install && npm run client-build"
   functions = "functions"
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/"
+  status = 200
