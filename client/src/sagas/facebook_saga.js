@@ -1,16 +1,16 @@
-import { takeEvery, call, put } from "redux-saga/effects";
+import axios from "axios";
+import { call, put, takeEvery } from "redux-saga/effects";
 import {
   LOAD_FB,
+  LOAD_FB_ERROR,
   LOAD_FB_SUCCESS,
-  LOAD_FB_ERROR
 } from "../reducers/action-types";
-import axios from "axios";
 
-const fbPostSuccess = payload => ({ type: LOAD_FB_SUCCESS, payload });
+const fbPostSuccess = (payload) => ({ type: LOAD_FB_SUCCESS, payload });
 
 function* facebookSaga(action) {
   try {
-    const payload = yield call(axios.get, "/fbposts");
+    const payload = yield call(axios.get, "/.netlify/functions/fbposts");
     yield put(fbPostSuccess(payload.data.posts));
   } catch (e) {
     yield put({ type: LOAD_FB_ERROR });
