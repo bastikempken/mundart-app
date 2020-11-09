@@ -42,6 +42,8 @@ export const text = (
         Therapie von Sprach&shy;ent&shy;wicklungs&shy;st&ouml;rungen im
         mehrsprachigen Kontext
       </li>
+      <li>Sprachtherapeutische F&ouml;rderung bei Kindern mit geistiger Behinderung am Beispiel Down-Syndrom, SF-Kids in Praxis, Kita und Schule</li>
+      <li>Der Modifikationsansatz in der Therapie mit stotternden Kindern bis zum Vorschulalter</li>
     </ul>
   </Fragment>
 );
