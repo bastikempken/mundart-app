@@ -7,7 +7,6 @@ import * as schwaneckeConstants from "./team/SchwaneckeConstants";
 import * as schaeferConstants from "./team/SchaeferConstants";
 import * as monikaConstants from "./team/MonikaConstants";
 import * as hundeConstants from "./team/HundeConstants";
-import * as wibkeConstants from "./team/WibkeConstants";
 import { LOADING_ON, LOADING_OFF } from "../reducers/action-types";
 
 import { Container } from "react-bootstrap";
@@ -55,10 +54,6 @@ class TeamComponent extends React.Component {
         />
         <TeamMemberComponent
           constants={schaeferConstants}
-          picLoadedCallback={this.picLoadedCallback}
-        />
-        <TeamMemberComponent
-          constants={wibkeConstants}
           picLoadedCallback={this.picLoadedCallback}
         />
         <TeamMemberComponent
