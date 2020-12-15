@@ -1,0 +1,42 @@
+$breakpoint: 992px;
+@media screen and (max-width: $breakpoint) {
+  .navigationbar__navigation-wrapper {
+    background-color: red;
+  }
+}
+
+.navigationbar {
+  position: relative;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+
+  &__navigation {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+
+    &-wrapper {
+      display: flex;
+      flex-basis: auto;
+      width: 100%;
+    }
+
+    &-item {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.5);
+
+      &:hover,
+      &--active {
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+}
