@@ -1,7 +1,7 @@
 import { NavigationEvent } from "./navigation/navigation-constants";
 import { mapping } from "./navigation/navigation-event-mapping";
 import HomeView from "./views/home-view";
-import TeamView from "./views/team-view";
+import TeamView from "./views/team/team-view";
 import TierTherapieView from "./views/tier-therapie-view/tier-therapie-view";
 import history from "history/browser";
 
@@ -11,8 +11,9 @@ export class MundartRouter extends HTMLElement {
   constructor() {
     super();
     this.show(mapping(history.location.pathname));
-    document.addEventListener("mundart-nav", (event: CustomEvent) => {
-      const navigationEvent: NavigationEvent = event.detail.navigationEvent;
+    document.addEventListener("mundart-nav", (event: Event) => {
+      const navigationEvent: NavigationEvent = (<CustomEvent>event).detail
+        .navigationEvent;
       console.log("TEAM", navigationEvent);
       this.show(navigationEvent);
     });
@@ -30,6 +31,9 @@ export class MundartRouter extends HTMLElement {
         break;
       case NavigationEvent.TIERGESCHUETZTE_THERAPIE:
         view = new TierTherapieView();
+        break;
+      case NavigationEvent.TEAM:
+        view = new TeamView();
         break;
       default:
         view = new HomeView();

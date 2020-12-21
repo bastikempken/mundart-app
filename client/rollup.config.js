@@ -24,7 +24,6 @@ export default [
       copy({
         targets: [
           { src: "src/index.html", dest: "dist" },
-          { src: "src/assets/*", dest: "dist/assets" },
           {
             src: "node_modules/uikit/dist/js/uikit.js",
             dest: "dist/libs",

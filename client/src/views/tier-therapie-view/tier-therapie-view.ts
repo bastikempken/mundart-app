@@ -9,10 +9,9 @@ export default class TierTherapieView extends HTMLElement {
   }
 
   connectedCallback() {
-    const renderINput = `${content.html}`;
-    console.log(renderINput);
-
-    const template: TemplateResult = html`${unsafeHTML(content.html)}`;
+    const template: TemplateResult = html`
+      ${unsafeHTML(content.html)}
+    `;
     render(template, this);
   }
 }
