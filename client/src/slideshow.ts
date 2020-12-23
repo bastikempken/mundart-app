@@ -1,4 +1,8 @@
 import { html, render } from "lit-html";
+//@ts-ignore
+import picture01 from "./assets/slideshow/picture_01_web.jpg";
+//@ts-ignore
+import picture02 from "./assets/slideshow/picture_02_web.jpg";
 
 export default class Slideshow extends HTMLElement {
   constructor() {
@@ -14,10 +18,10 @@ export default class Slideshow extends HTMLElement {
       >
         <ul class="uk-slideshow-items">
           <li>
-            <img src="assets/slideshow/picture_01_web.jpg" alt="" uk-cover />
+            <img src=${picture01} alt="" uk-cover />
           </li>
           <li>
-            <img src="assets/slideshow/picture_02_web.jpg" alt="" uk-cover />
+            <img src=${picture02} alt="" uk-cover />
           </li>
         </ul>
 

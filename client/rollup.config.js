@@ -3,6 +3,8 @@ import copy from "rollup-plugin-copy";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import markdown from "@jackfranklin/rollup-plugin-markdown";
+import jpgImporter from "./build-plugins/jpg-importer.js";
+import templatePostProcessor from "./build-plugins/template-post-processor.js";
 
 export default [
   {
@@ -16,6 +18,16 @@ export default [
       typescript({
         target: "es6",
         allowJs: true,
+      }),
+      templatePostProcessor({
+        templatePath: "dist/index.html",
+      }),
+      jpgImporter({
+        basePath: "dist",
+        compressions: [
+          { src: "**/team/*.jpg", quality: 20 },
+          { src: "**/slideshow/*.jpg", quality: 50 },
+        ],
       }),
       nodeResolve(),
       replace({

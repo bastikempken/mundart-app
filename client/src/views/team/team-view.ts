@@ -7,6 +7,11 @@ import { unsafeHTML } from "lit-html/directives/unsafe-html";
 import { styleMap } from "lit-html/directives/style-map";
 import { convert } from "./markdown-adapter";
 
+//@ts-ignore
+import bild from "../../assets/team/alina.jpg";
+
+console.log(bild);
+
 export interface TeamMember {
   name: string;
   photo: string;
@@ -45,7 +50,7 @@ export default class TeamView extends HTMLElement {
     return html`<div class="uk-child-width-expand uk-grid-match" uk-grid="masonry: true">
       <div class="uk-width-1-3@s">
         <div class="uk-card uk-card-default uk-card-body">
-          <img src="assets/team/${teamMember.photo}"></img>
+          <img src="${bild}"></img>
         </div>
       </div>
       <div class="uk-width-2-3@s">
