@@ -4,7 +4,7 @@ import { extname, parse, sep } from "path";
 import hasha from "hasha";
 import imagemin from "imagemin";
 import imageminMozjpeg from "imagemin-mozjpeg";
-import { blue, bold } from "colorette";
+import { blue } from "colorette";
 import picomatch from "picomatch";
 
 const DEFAULTS = {
@@ -56,10 +56,8 @@ const exec = async (id, workingOptions) => {
   });
 
   console.log(
-    bold(
-      blue(
-        `compressed ${pathObject.srcFile} to ${pathObject.distFileHashed} with quality ${quality}`
-      )
+    blue(
+      `compressed ${pathObject.srcFile} to ${pathObject.distFileHashed} with quality ${quality}`
     )
   );
 

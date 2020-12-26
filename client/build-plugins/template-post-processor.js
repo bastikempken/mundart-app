@@ -1,7 +1,10 @@
-import { readFileSync } from "fs";
+import { readFileSync, renameSync, writeFileSync } from "fs";
 import { sep } from "path";
 import { JSDOM } from "jsdom";
 import hasha from "hasha";
+import { magenta } from "colorette";
+
+const log = (value) => console.log(magenta(value));
 
 const parseFileName = (value) => {
   const splitValues = value.split("/");
@@ -9,25 +12,45 @@ const parseFileName = (value) => {
     ? splitValues[splitValues.length - 1]
     : splitValues;
   const splitFileName = file.split(".");
-  return { file: splitFileName[0], ext: "." + splitFileName[1] };
+  return {
+    file: splitFileName[0],
+    ext: splitFileName[1],
+    base: splitFileName.join("."),
+  };
 };
 
-const buildSrcHash = async (srcValue, { basePath, algorithm }) => {
-  const srcFile = process.cwd() + sep + basePath + sep + srcValue;
-  console.log("SRC FILE", srcFile);
-  const hash = await hasha.fromFile(srcFile, {
+const buildSrcHash = async (srcPath, algorithm) => {
+  return await hasha.fromFile(srcPath, {
     algorithm,
   });
-  const { file } = parseFileName(srcFile);
-  return srcFile.replace(file, `${file}.${hash}`);
 };
 
-const modifySrcTags = async (window, options) => {
-  window.document.querySelectorAll("script").forEach(async (element) => {
-    const hashed = await buildSrcHash(element.getAttribute("src"), options);
-    console.log("HASHED ", hashed);
-    element.setAttribute("src", hashed);
-  });
+const buildNewSrcValue = (srcValue, srcPath, hash) => {
+  const { file } = parseFileName(srcPath);
+  return srcValue.replace(file, `${file}.${hash}`);
+};
+
+const convertSrcValueToPath = (basePath, srcValue) =>
+  process.cwd() + sep + basePath + sep + srcValue;
+
+const renameFile = (srcPath, hash) => {
+  const { file, ext, base } = parseFileName(srcPath);
+  const distPath = srcPath.replace(`${base}`, `${file}.${hash}.${ext}`);
+  renameSync(srcPath, distPath);
+};
+
+const modifyTags = async (window, options, tagType, attribute) => {
+  const tags = window.document.querySelectorAll(tagType);
+  for (let i = 0; i < tags.length; i++) {
+    const tag = tags[i];
+    const srcValue = tag.getAttribute(attribute);
+    const srcPath = convertSrcValueToPath(options.basePath, srcValue);
+    const hash = await buildSrcHash(srcPath, options.algorithm);
+    renameFile(srcPath, hash);
+    const newSrcValue = buildNewSrcValue(srcValue, srcPath, hash);
+    tag.setAttribute(attribute, newSrcValue);
+    log(`fingerprint: ${srcValue} to ${newSrcValue}`);
+  }
 };
 
 export default function templatePostProcessor(options = {}) {
@@ -37,19 +60,13 @@ export default function templatePostProcessor(options = {}) {
       if (!options.basePath || !options.templateFile) {
         console.error("Option 'templatePath' is missing");
       }
-
-      const template = readFileSync(
-        options.basePath + sep + options.templateFile,
-        "utf-8"
-      );
-
-      const dom = new JSDOM(template);
-
       (async () => {
-        console.log("BEGINN ASYNC");
-        await modifySrcTags(dom.window, options);
-        console.log(dom.serialize());
-        console.log("END ASYNC");
+        const filePath = options.basePath + sep + options.templateFile;
+        const template = readFileSync(filePath, "utf8");
+        const dom = new JSDOM(template);
+        await modifyTags(dom.window, options, "script", "src");
+        await modifyTags(dom.window, options, "link", "href");
+        writeFileSync(filePath, dom.serialize(), { encoding: "utf8" });
       })().catch((err) => {
         console.error(err);
       });
