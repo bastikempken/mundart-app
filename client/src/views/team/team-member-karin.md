@@ -1,7 +1,3 @@
----
-picture: karin.jpg
----
-
 # Karin Wendland
 
 ## Logopädin (zurzeit in Elternzeit)

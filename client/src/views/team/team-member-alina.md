@@ -1,7 +1,3 @@
----
-picture: alina.jpg
----
-
 # Alina Krähahn
 
 ## Logopädin Bachelor of Health and Communications

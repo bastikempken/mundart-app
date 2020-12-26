@@ -8,11 +8,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "image-compression": "node image-compression.js",
-    "clean:sass": "rimraf dist/style.css",
+    "clean:sass": "rimraf dist/style.*.css",
     "build:sass": "npm run clean:sass && sass ./src/style.scss ./dist/style.css --no-source-map",
-    "build": "npm run clean && npm run build:sass && rollup -c",
+    "build": "npm run clean && npm run build:sass && rollup -c rollup.config.prod.js",
     "watch:sass": "sass ./src/style.scss ./dist/style.css --watch --no-source-map",
-    "watch": "npm run clean && npm run image-compression && npm run build:sass && rollup -c -w",
+    "watch": "npm run clean && npm run build:sass && rollup -c rollup.config.dev.js -w",
     "serve": "browser-sync start --server 'dist' --files 'dist' --cors -b 'google chrome' --no-notify --single",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

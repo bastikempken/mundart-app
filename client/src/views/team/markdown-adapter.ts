@@ -1,4 +1,14 @@
-import { TeamMember } from "./team-view";
+interface Markdown {
+  html: string;
+  metadata: { [key: string]: string };
+}
+
+export interface MarkdownContent {
+  name: string;
+  title: string;
+  birthday: string;
+  content: string;
+}
 
 const parseDOM = (content: string): HTMLDivElement => {
   const div = document.createElement("div");
@@ -12,30 +22,38 @@ const extractName = (div: HTMLDivElement): string =>
 const extractTitle = (div: HTMLDivElement): string =>
   div.querySelector("h2").innerHTML;
 
-const extractBirthday = (div: HTMLDivElement): string =>
-  div.querySelectorAll("p")[0].innerHTML;
+const extractBirthday = (div: HTMLDivElement): string => {
+  const paragraphs = div.querySelectorAll("p")
+  if(paragraphs?.length) {
+    const firstParagraph = paragraphs[0].innerHTML;
+    if(!firstParagraph.includes('NoBirthday')) {
+      return firstParagraph
+    }
+  }
+  return ''
+}
 
 const extractContent = (div: HTMLDivElement): string => {
   const children = Array.prototype.slice.call(div.children);
-  return children
+  const result = children
     .slice(3) // Skip heading, title, birthday !!
     .reduce(
       (prev: string, curr: HTMLParagraphElement) => prev + curr.outerHTML,
       ""
     );
+    return result !== '<p>NoContent</p>' ? result : ''
 };
 
-const extractPhoto = (meta: { [key: string]: string }): string => meta.picture;
+export const extractPhoto = (content: Markdown): string => {
+  const meta = content.metadata;
+  return meta.picture;
+};
 
-export const convert = (content: {
-  html: string;
-  metadata: { [key: string]: string };
-}): TeamMember => {
+export const convert = (content: Markdown): MarkdownContent => {
   const dom = parseDOM(content.html);
   return {
     name: extractName(dom),
     title: extractTitle(dom),
-    photo: extractPhoto(content.metadata),
     birthday: extractBirthday(dom),
     content: extractContent(dom),
   };
