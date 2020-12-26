@@ -7,34 +7,42 @@
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/team"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/praxis"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/fragen"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/tiergestuetzte_therapie"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/anfahrt"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/kontakt"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/impressum"
   to = "/"
   status = 200
 
+[[redirects]]
   from = "/datenschutz"
   to = "/"
   status = 200
