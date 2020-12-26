@@ -20,7 +20,9 @@ export default [
         allowJs: true,
       }),
       templatePostProcessor({
-        templatePath: "dist/index.html",
+        basePath: "dist",
+        templateFile: "index.html",
+        algorithm: "md5",
       }),
       jpgImporter({
         basePath: "dist",
