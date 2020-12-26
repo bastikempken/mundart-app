@@ -2,3 +2,7 @@
   command = "npm install && npm run build && npm run client-install && npm run client-build"
   functions = "functions"
 
+[[redirects]]
+  from = "/team"
+  to = "/"
+  status = 200
