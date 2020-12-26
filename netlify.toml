@@ -3,6 +3,38 @@
   functions = "functions"
 
 [[redirects]]
-  from = "/[news|team|praxis|fragen|tiergestuetzte_therapie|anfahrt|kontakt|impressum|datenschutz]"
+  from = "/news"
+  to = "/"
+  status = 200
+
+  from = "/team"
+  to = "/"
+  status = 200
+
+  from = "/praxis"
+  to = "/"
+  status = 200
+
+  from = "/fragen"
+  to = "/"
+  status = 200
+
+  from = "/tiergestuetzte_therapie"
+  to = "/"
+  status = 200
+
+  from = "/anfahrt"
+  to = "/"
+  status = 200
+
+  from = "/kontakt"
+  to = "/"
+  status = 200
+
+  from = "/impressum"
+  to = "/"
+  status = 200
+
+  from = "/datenschutz"
   to = "/"
   status = 200
