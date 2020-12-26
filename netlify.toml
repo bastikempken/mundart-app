@@ -3,6 +3,6 @@
   functions = "functions"
 
 [[redirects]]
-  from = "/team"
+  from = "/[news|team|praxis|fragen|tiergestuetzte_therapie|anfahrt|kontakt|impressum|datenschutz]"
   to = "/"
   status = 200
