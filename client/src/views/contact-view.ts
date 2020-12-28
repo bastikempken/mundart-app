@@ -1,5 +1,4 @@
 import { render, html, TemplateResult } from "lit-html";
-import { styleMap } from "lit-html/directives/style-map";
 
 const ID_MODAL = "feedback-modal";
 const FORM_NAME = "form-name";
@@ -178,7 +177,7 @@ export default class ContactView extends HTMLElement {
         <div class="uk-margin">
           <button
             class="uk-button uk-button-default"
-            @click=${(e) => this.clickSubmit(e)}
+            @click=${(e: MouseEvent) => this.clickSubmit(e)}
           >
             Abschicken
           </button>
