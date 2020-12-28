@@ -5,6 +5,7 @@ import replace from "@rollup/plugin-replace";
 import markdown from "@jackfranklin/rollup-plugin-markdown";
 import jpgImporter from "./build-plugins/jpg-importer.js";
 import templatePostProcessor from "./build-plugins/template-post-processor.js";
+import { terser } from "rollup-plugin-terser";
 
 export default [
   {
@@ -24,6 +25,7 @@ export default [
         templateFile: "index.html",
         algorithm: "md5",
       }),
+      terser(),
       jpgImporter({
         basePath: "dist",
         compressions: [
@@ -31,9 +33,10 @@ export default [
           { src: "**/slideshow/*.jpg", quality: 50 },
         ],
       }),
+
       nodeResolve(),
       replace({
-        "process.env.NODE_ENV": JSON.stringify("development"),
+        "process.env.NODE_ENV": JSON.stringify("prod"),
       }),
       copy({
         targets: [

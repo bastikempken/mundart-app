@@ -31,7 +31,7 @@ export const mapping = (pathname: string): NavigationEvent => {
       event = NavigationEvent.IMPRESSUM;
       break;
     case kontakt.urlHash:
-      event = NavigationEvent.KONTAKT;
+      event = NavigationEvent.CONTACT;
       break;
     case neuigkeiten.urlHash:
       event = NavigationEvent.NEUIGKEITEN;

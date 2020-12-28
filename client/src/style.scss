@@ -6,3 +6,10 @@
 //@mixin hook-card() { color: #000; }
 
 @import "../node_modules/uikit/src/scss/uikit-theme.scss";
+
+main .form-content {
+  height: 0.5px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}

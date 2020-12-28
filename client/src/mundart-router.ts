@@ -1,6 +1,7 @@
 import { NavigationEvent } from "./navigation/navigation-constants";
 import { mapping } from "./navigation/navigation-event-mapping";
 import HomeView from "./views/home-view";
+import ContactView from "./views/contact-view";
 import TeamView from "./views/team/team-view";
 import TierTherapieView from "./views/tier-therapie-view/tier-therapie-view";
 import history from "history/browser";
@@ -34,6 +35,9 @@ export class MundartRouter extends HTMLElement {
         break;
       case NavigationEvent.TEAM:
         view = new TeamView();
+        break;
+      case NavigationEvent.CONTACT:
+        view = new ContactView();
         break;
       default:
         view = new HomeView();

@@ -4,7 +4,6 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import markdown from "@jackfranklin/rollup-plugin-markdown";
 import jpgImporter from "./build-plugins/jpg-importer.js";
-import templatePostProcessor from "./build-plugins/template-post-processor.js";
 
 export default [
   {
@@ -33,6 +32,7 @@ export default [
       copy({
         targets: [
           { src: "src/index.html", dest: "dist" },
+          { src: "src/assets/fb-logo.png", dest: "dist/assets" },
           {
             src: "node_modules/uikit/dist/js/uikit.js",
             dest: "dist/libs",
