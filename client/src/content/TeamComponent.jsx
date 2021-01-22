@@ -2,8 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import TeamMemberComponent from "./team/TeamMemberComponent";
 import * as alinaConstants from "./team/AlinaConstants";
-import * as wendlandConstants from "./team/WendlandConstants";
-import * as schwaneckeConstants from "./team/SchwaneckeConstants";
+//import * as wendlandConstants from "./team/WendlandConstants";
 import * as schaeferConstants from "./team/SchaeferConstants";
 import * as monikaConstants from "./team/MonikaConstants";
 import * as hundeConstants from "./team/HundeConstants";
@@ -23,7 +22,7 @@ class TeamComponent extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.state.picLoaded >= 6) {
+    if (this.state.picLoaded >= 4) {
       this.props.loadingOff();
     }
   }
@@ -44,14 +43,13 @@ class TeamComponent extends React.Component {
           constants={alinaConstants}
           picLoadedCallback={this.picLoadedCallback}
         />
-        <TeamMemberComponent
+       {/*
+         <TeamMemberComponent
           constants={wendlandConstants}
           picLoadedCallback={this.picLoadedCallback}
         />
-        <TeamMemberComponent
-          constants={schwaneckeConstants}
-          picLoadedCallback={this.picLoadedCallback}
-        />
+        */}
+        
         <TeamMemberComponent
           constants={schaeferConstants}
           picLoadedCallback={this.picLoadedCallback}
