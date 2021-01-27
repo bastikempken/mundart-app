@@ -1,7 +1,7 @@
-import Picture from "../../media/team/hunde.jpg";
+import Picture from "../../media/team/sookie.jpg";
 
-export const title = "Sookie und Lino";
+export const title = "Sookie";
 
 export const picture = Picture;
 
-export const shortText = "Unsere Therapiebegleithunde ";
+export const shortText = "Unser Therapiebegleithund";
