@@ -1,7 +1,3 @@
 node_modules/
-/client/build/
-/mundart-app.iml
-/deploy-content.zip
-/deploy-credentials.json
-config.js
 .idea/
+.next/
