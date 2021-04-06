@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build && npm run site:install && npm run site:build"
+  command = "npm install && npm run build && npm run site:install && npm run site:compile"
   functions = "functions"
 
 [[redirects]]
