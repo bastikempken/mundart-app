@@ -12,11 +12,13 @@
     "start": "npm run clean && npm-run-all --parallel compile:watch serve",
     "compile": "npm run clean && faucet",
     "compile:watch": "faucet --watch",
-    "serve": "browser-sync start --serveStatic 'dist' --files 'dist' --cors -b 'google chrome' --no-notify --single --proxy 'localhost:9000'"
+    "serve": "node browsersync.config.js"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
+    "faucet-pipeline-js": "^2.1.7",
     "faucet-pipeline-nunjucks": "^0.1.0",
+    "http-proxy-middleware": "^1.1.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2"
   }
