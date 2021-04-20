@@ -34,7 +34,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
-.nav-item:hover {
+.nav-item:hover, .nav-item--active {
   color: #a21e0f;
   text-decoration: underline;
 }

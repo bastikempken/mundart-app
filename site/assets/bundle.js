@@ -1,21 +1,29 @@
 (function () {
 'use strict';
 
-let navburger = document.querySelector('.nav-burger');
-let navburgerIcon = document.querySelector('.nav-burger__icon');
-navburger.addEventListener('click', function (e) {
-    navburgerIcon.classList.toggle('nav-burger__icon--open');
-    const event = new CustomEvent("nav-burger-click", {
-        detail: {},
-        bubbles: true,
+let safeRegister = (selector, func) => {
+    let element = document.querySelector(selector);
+    if (element) {
+        func(element);
+    }
+};
+
+safeRegister('.nav-burger', navburger => {
+    navburger.addEventListener('click', function (e) {
+        let navburgerIcon = document.querySelector('.nav-burger__icon');
+        navburgerIcon.classList.toggle('nav-burger__icon--open');
+        const event = new CustomEvent("nav-burger-click", {
+            detail: {},
+            bubbles: true,
+        });
+        navburger.dispatchEvent(event);
     });
-    navburger.dispatchEvent(event);
 });
 
-let navbar = document.querySelector('.navbar');
-
-navbar.addEventListener('nav-burger-click', function (e) {
-    navbar.classList.toggle('navbar--open');
+safeRegister('.navbar', navbar => {
+    navbar.addEventListener('nav-burger-click', function (e) {
+        navbar.classList.toggle('navbar--open');
+    });
 });
 
 }());

@@ -1,6 +1,7 @@
 [build]
   command = "npm install && npm run build && npm run site:install && npm run site:compile"
   functions = "functions"
+  publish = "site/dist"
 
 [[redirects]]
   from = "/news"

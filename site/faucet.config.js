@@ -1,6 +1,16 @@
-const sites = ["index", "tiergestuetze-therapie", "team"];
+const sites = ["index",
+    "tiergestuetzte-therapie",
+    "team",
+    "anfahrt",
+    "kontakt",
+    "neuigkeiten",
+    "impressum",
+    "cookie-einstellungen",
+    "datenschutz"
+];
 
 module.exports = {
+    watchDirs: ["./src"],
     nunjucks: sites.map(site => ({
         source: `./src/${site}.njk`,
         target: `./dist/${site}.html`
@@ -17,12 +27,13 @@ module.exports = {
             target: "./dist/assets/app-bundle.js"
         }
     ],
-    watchDirs: ["./src"],
+
     plugins: {
         nunjucks: {
             key: "nunjucks",
             plugin: "faucet-pipeline-nunjucks",
             bucket: "static"
         }
-    }
+    },
+
 }
