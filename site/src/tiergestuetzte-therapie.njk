@@ -1,14 +1,19 @@
 {% import "src/fragments/navigation.njk" as navigation %}
 {% import "src/fragments/subpage-header.njk" as subPageHeader %}
 <html>
-    {% include "src/fragments/header.html" %}
+{% include "src/fragments/header.html" %}
+
 </html>
+
 <body>
     {{ navigation.navbar('TiergestuetzteTherapie') }}
     {{ subPageHeader.header('Tiergestützte Therapie') }}
     <script src="/assets/bundle.js"></script>
     <script src="/assets/app-bundle.js"></script>
-      {{ navigation.footer() }}
+    <main>
+        {% markdown %}
+        {% include './content/tiergestuetzte-therapie.md' %}
+        {% endmarkdown %}
+    </main>
+    {{ navigation.footer() }}
 </body>
-
-

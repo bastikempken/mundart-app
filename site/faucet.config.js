@@ -13,7 +13,8 @@ module.exports = {
     watchDirs: ["./src"],
     nunjucks: sites.map(site => ({
         source: `./src/${site}.njk`,
-        target: `./dist/${site}.html`
+        target: `./dist/${site}.html`,
+        markdown: true
     })),
     static: [
         {
