@@ -47,6 +47,12 @@ export const text = (
         Zusammenarbeit mit Zahn&auml;rzten und Kieferorthop&auml;den
       </li>
       <li>Logop&auml;dische Anwendungen mit dem NOVAFON</li>
+      <li>Roter Faden in der Phonologietherapie</li>
+      <li>Roter Faden in der Grammatiktherapie</li>
+      <li>
+        Diagnostik und Therapie bei Kindern mit auditiven Verarbeitungsstörungen
+      </li>
+      <li>Der Wortschatzsammler</li>
     </ul>
   </Fragment>
 );

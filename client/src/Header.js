@@ -1,6 +1,6 @@
 import React from "react";
 import Picture_01 from "./media/header/picture_01_web.jpg";
-import Picture_02 from "./media/header/picture_02_web.jpg";
+//import Picture_02 from "./media/header/picture_02_web.jpg";
 import Picture_03 from "./media/header/picture_03_web.jpg";
 import Picture_04 from "./media/header/picture_04_web.jpg";
 import Picture_05 from "./media/header/picture_05_web.jpg";
@@ -21,7 +21,7 @@ class Header extends React.Component {
 
   sendPicLoad = () => {
     this.setState({ pictureLoaded: this.state.pictureLoaded + 1 }, () => {
-      if (this.state.pictureLoaded === 8) {
+      if (this.state.pictureLoaded === 7) {
         this.props.sendPicLoad();
       }
     });
@@ -38,14 +38,16 @@ class Header extends React.Component {
             onLoad={this.sendPicLoad}
           />
         </Carousel.Item>
-        <Carousel.Item>
+        {/*
+          <Carousel.Item>
           <img
             className="d-block w-100"
             src={Picture_02}
             alt=""
             onLoad={this.sendPicLoad}
-          />
+            />
         </Carousel.Item>
+         */}
         <Carousel.Item>
           <img
             className="d-block w-100"

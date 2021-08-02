@@ -2,12 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import TeamMemberComponent from "./team/TeamMemberComponent";
 import * as alinaConstants from "./team/AlinaConstants";
-import * as wendlandConstants from "./team/WendlandConstants";
-import * as schwaneckeConstants from "./team/SchwaneckeConstants";
 import * as schaeferConstants from "./team/SchaeferConstants";
+import * as hemmersConstants from "./team/HemmersConstants";
 import * as monikaConstants from "./team/MonikaConstants";
 import * as hundeConstants from "./team/HundeConstants";
-import * as wibkeConstants from "./team/WibkeConstants";
 import { LOADING_ON, LOADING_OFF } from "../reducers/action-types";
 
 import { Container } from "react-bootstrap";
@@ -24,7 +22,7 @@ class TeamComponent extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.state.picLoaded >= 6) {
+    if (this.state.picLoaded >= 5) {
       this.props.loadingOff();
     }
   }
@@ -46,19 +44,11 @@ class TeamComponent extends React.Component {
           picLoadedCallback={this.picLoadedCallback}
         />
         <TeamMemberComponent
-          constants={wendlandConstants}
-          picLoadedCallback={this.picLoadedCallback}
-        />
-        <TeamMemberComponent
-          constants={schwaneckeConstants}
-          picLoadedCallback={this.picLoadedCallback}
-        />
-        <TeamMemberComponent
           constants={schaeferConstants}
           picLoadedCallback={this.picLoadedCallback}
         />
         <TeamMemberComponent
-          constants={wibkeConstants}
+          constants={hemmersConstants}
           picLoadedCallback={this.picLoadedCallback}
         />
         <TeamMemberComponent

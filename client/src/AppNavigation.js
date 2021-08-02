@@ -80,7 +80,7 @@ class AppNavigation extends React.Component {
                   )
                 }
               >
-                Tiergestütze Therapie
+                Tiergestützte Therapie
               </Nav.Link>
               <Nav.Link
                 className={this.handleActiveLink(naviConstants.anfahrt)}
