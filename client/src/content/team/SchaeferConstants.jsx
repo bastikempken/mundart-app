@@ -41,6 +41,10 @@ export const text = (
         Die integrierte Myo&shy;funktions&shy;therapie nach Passon in enger
         Zusammenarbeit mit Zahn&auml;rzten und Kieferorthop&auml;den
       </li>
+      <li>
+        LAX VOX – Die Übung zur Pflege, Heilung und Schulung der Stimme – Eine
+        Einführung
+      </li>
     </ul>
   </Fragment>
 );

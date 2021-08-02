@@ -4,10 +4,10 @@ import { apiBuilder } from "../functions-preafix";
 import {
   LOAD_FB,
   LOAD_FB_ERROR,
-  LOAD_FB_SUCCESS,
+  LOAD_FB_SUCCESS
 } from "../reducers/action-types";
 
-const fbPostSuccess = (payload) => ({ type: LOAD_FB_SUCCESS, payload });
+const fbPostSuccess = payload => ({ type: LOAD_FB_SUCCESS, payload });
 
 function* facebookSaga(action) {
   try {

@@ -22,14 +22,17 @@ export const HomeComponent = () => (
       </p>
       <hr />
       <div>
-        <p className={"text-center"}><b>CORONAVIRUS SCHUTZMAßNAHMEN</b></p>
+        <p className={"text-center"}>
+          <b>CORONAVIRUS SCHUTZMAßNAHMEN</b>
+        </p>
         <p>
           Da Experten davon ausgehen, dass uns die Corona-Krise noch mindestens
           1 Jahr begleiten wird, hier einige Punkte, wie wir in unserer Praxis
           auf die neue Situation reagieren:
           <ul>
             <li>
-              Bitte sofort nach Eintritt in die Praxis die <b>Hände ca. 30 Sek. mit Wasser und Seife waschen</b> oder mit dem
+              Bitte sofort nach Eintritt in die Praxis die{" "}
+              <b>Hände ca. 30 Sek. mit Wasser und Seife waschen</b> oder mit dem
               von uns bereit gestellten Desinfektionsmitel desinfizieren.
             </li>
             <li>
@@ -52,12 +55,11 @@ export const HomeComponent = () => (
               Halskratzen, Husten, Fieber.
             </li>
             <li>
-              Wenn Sie sich krank fühlen, rufen Sie entweder Ihren <b>Hausarzt</b> an <b>oder 116 117</b>
+              Wenn Sie sich krank fühlen, rufen Sie entweder Ihren{" "}
+              <b>Hausarzt</b> an <b>oder 116 117</b>
             </li>
           </ul>
-          Wir bedanken uns bei ihrer Mithilfe!
-Logopädische Praxis Krähahn
-
+          Wir bedanken uns bei ihrer Mithilfe! Logopädische Praxis Krähahn
         </p>
       </div>
       <div style={{ textAlign: "center" }}>

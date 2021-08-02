@@ -15,7 +15,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pictureLoaded: 0,
+      pictureLoaded: 0
     };
   }
 
@@ -101,10 +101,10 @@ class Header extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   sendPicLoad: () => {
     dispatch({ type: LOADING_OFF });
-  },
+  }
 });
 
 export default connect(

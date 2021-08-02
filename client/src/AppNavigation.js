@@ -8,12 +8,12 @@ import Sticky from "react-sticky-el";
 import MundartLogo from "./media/vector_navi.svg";
 
 class AppNavigation extends React.Component {
-  handleNaviClick = (navigate) => {
+  handleNaviClick = navigate => {
     navigate();
     this.forceUpdate();
   };
 
-  handleActiveLink = (pathname) =>
+  handleActiveLink = pathname =>
     history.location.pathname === pathname ? "active" : "";
 
   render() {
