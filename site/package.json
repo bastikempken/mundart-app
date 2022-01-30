@@ -15,11 +15,14 @@
     "serve": "node browsersync.config.js"
   },
   "devDependencies": {
+    "bootstrap": "^5.1.0",
     "browser-sync": "^2.26.14",
     "faucet-pipeline-js": "^2.1.7",
     "faucet-pipeline-nunjucks": "0.2.0",
+    "faucet-pipeline-static": "^1.2.0",
     "http-proxy-middleware": "^1.1.0",
     "marked": "^2.0.3",
+    "npm": "^7.21.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2"
   }
