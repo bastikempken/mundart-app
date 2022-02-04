@@ -1,4 +1,3 @@
-# Tiergestütze Therapie
 ## Tierische Mitarbeiter in der logopädischen Praxis Krähahn?
 In unserer Praxis haben wir zwei Therapiebegleithunde. Sie hören auf die Namen Lino (Labrador – Australian Sheperd Mix) und Sookie (Nova Scotia Duck Tolling Retriever). Falls es gewünscht ist oder eine Indikation von unserer Seite zur tiergestützten Therapie besteht, besprechen wir dies mit allen Beteiligten. Wenn sich alle über diese tierische Zusammenarbeit freuen, steht dem nichts mehr im Wege.
 
