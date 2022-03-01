@@ -2,7 +2,6 @@ import React from "react";
 import { Router, Route, Switch } from "react-router";
 import { HomeComponent } from "./content/HomeComponent";
 import TeamComponent from "./content/TeamComponent";
-import NewsComponent from "./content/NewsComponent";
 import PraxisComponent from "./content/PraxisComponent";
 import FragenComponent from "./content/FragenComponent";
 import TierTherapieComponent from "./content/TierTherapieComponent";
@@ -20,7 +19,6 @@ class AppRouter extends React.Component {
     return (
       <Router history={history}>
         <Switch>
-          <Route path={naviConstants.news} component={NewsComponent} />
           <Route path={naviConstants.team} component={TeamComponent} />
           <Route path={naviConstants.praxis} component={PraxisComponent} />
           <Route path={naviConstants.fragen} component={FragenComponent} />
@@ -52,10 +50,6 @@ const navigateTo = path => {
 
 export const navigateToHome = () => {
   navigateTo(naviConstants.home);
-};
-
-export const navigateToNews = () => {
-  navigateTo(naviConstants.news);
 };
 
 export const navigateToTeam = () => {
