@@ -1,6 +1,6 @@
 export const root = "/";
 export const home = "/home";
-export const news = "/news";
+export const karriere = "/karriere";
 export const team = "/team";
 export const praxis = "/praxis";
 export const fragen = "/fragen";

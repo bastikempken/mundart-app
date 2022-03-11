@@ -53,6 +53,12 @@ class AppNavigation extends React.Component {
                 Team
               </Nav.Link>
               <Nav.Link
+                className={this.handleActiveLink(naviConstants.karriere)}
+                onClick={() => this.handleNaviClick(appRouter.navigateToKarriere)}
+              >
+                Karriere
+              </Nav.Link>
+              <Nav.Link
                 className={this.handleActiveLink(naviConstants.praxis)}
                 onClick={() => this.handleNaviClick(appRouter.navigateToPraxis)}
               >
