@@ -46,3 +46,8 @@
   from = "/datenschutz"
   to = "/"
   status = 200
+
+[[redirects]]
+  from = "/karriere"
+  to = "/"
+  status = 200
