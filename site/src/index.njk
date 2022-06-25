@@ -1,12 +1,69 @@
 {% import "src/fragments/navigation.njk" as navigation %}
+{% import "src/fragments/scripts.njk" as scripts %}
+<!-- -->
+{% set items = [
+    "picture_01_web.jpg",
+    "picture_02_web.jpg",
+    "picture_03_web.jpg",
+    "picture_04_web.jpg",
+    "picture_05_web.jpg",
+    "picture_06_web.jpg",
+    "picture_07_web.jpg",
+    "picture_08_web.jpg"]
+%}
 <html>
-    {% include "src/fragments/header.html" %}
-</html>
+{% include "src/fragments/header.html" %}
 <body>
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            {% for item in items %}
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="{{loop.index - 1}}" class="{{ "
+                active" if loop.index==1 }}" aria-current="true" aria-label="Slide {{loop.index}}"></button>
+            {% endfor %}
+        </div>
+        <div class="carousel-inner">
+            {% for item in items %}
+            <div class="carousel-item {{" active" if loop.index==1 }}">
+                <img src="/assets/header/{{ item }}" class="d-block w-100">
+            </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--  -->
     {{ navigation.navbar('Home') }}
-    <script src="/assets/bundle.js"></script>
-    <script src="/assets/app-bundle.js"></script>
+    <main>
+        <div className="col">
+            <blockquote class="blockquote text-center">
+                <h1>Die Sprache ist die Kleidung der Gedanken</h1>
+                <footer class="blockquote-footer">Samuel Johnson</footer>
+            </blockquote>
+        </div>
+        <p>
+            Wem es schwer f&auml;llt zu sprechen, oder wer die M&ouml;glichkeit
+            verliert sich auszudr&uuml;cken, der ist in unserer heutigen
+            Gesellschaft h&auml;ufig eingeschr&auml;nkt. Unser Anliegen in der
+            logop&auml;dischen Praxis mundArt ist es, Menschen Wege und
+            M&ouml;glichkeiten aufzuweisen wieder mit ihren Mitmenschen zu
+            kommunizieren. Daf&uuml;r steht Ihnen unser Team von ausgebildeten
+            Logop&auml;den gerne unterst&uuml;tzend zur Seite.
+        </p>
+        <hr />
+        <p class="text-center">
+            <b>CORONAVIRUS SCHUTZMAßNAHMEN</b>
+        </p>
+        {% markdown %}
+        {% include './content/corona-info.md' %}
+        {% endmarkdown %}
+    </main>
     {{ navigation.footer() }}
+    {{ scripts.scripts() }}
 </body>
-
-
+</html>

@@ -1,14 +1,12 @@
 {% import "src/fragments/navigation.njk" as navigation %}
-{% import "src/fragments/subpage-header.njk" as subPageHeader %}
+{% import "src/fragments/scripts.njk" as scripts %}
 <html>
     {% include "src/fragments/header.html" %}
 </html>
 <body>
     {{ navigation.navbar() }}
-    {{ subPageHeader.header('Impressum') }}
-    <script src="/assets/bundle.js"></script>
-    <script src="/assets/app-bundle.js"></script>
     {{ navigation.footer('Impressum') }}
+    {{ scripts.scripts() }}
 </body>
 
 

@@ -1,30 +1,50 @@
 {% macro navbar(activeRoute = '') %}
-<nav class="navbar">
-    <div class="nav-burger">
-        <div class="nav-burger__icon-wrapper ">
-            <div class="nav-burger__icon"></div>
-        </div><span class="nav-burger__title">Menü</span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img
+            src="assets/logo.svg"
+            width="100"
+            href=""
+            height=""
+            class="d-inline-block align-top"
+            alt="Mundart Logo"
+            >
+        </img>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {{ " active" if activeRoute=="Home" }}" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ " active" if activeRoute=="Neuigkeiten" }}"
+                        href="/neuigkeiten">Neuigkeiten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ " active" if activeRoute=="Team" }}" href="/team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ " active" if activeRoute=="TiergestuetzteTherapie" }}"
+                        href="/tiergestuetzte-therapie">Tiergestützte Therapie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ " active" if activeRoute=="Anfahrt" }}" href="/anfahrt">Anfahrt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ " active" if activeRoute=="Kontakt" }}" href="/kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="navbar__navitems navbar__navitems--hidden">
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Home" }}"><a class="nav-item__link" href="/">Home</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Neuigkeiten" }}"><a class="nav-item__link" href="/neuigkeiten">Neuigkeiten</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Team" }}"><a class="nav-item__link" href="/team">Team</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "TiergestuetzteTherapie" }}"><a class="nav-item__link" href="/tiergestuetzte-therapie">Tiergestützte Therapie</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Anfahrt" }}"><a class="nav-item__link" href="/anfahrt">Anfahrt</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Kontakt" }}"><a class="nav-item__link" href="/kontakt">Kontakt</a></li>
-    </div>
-    <div class="navbar__center"><img src="/assets/logo.svg" /></div>
 </nav>
 {% endmacro %}
 
 
 {% macro footer(activeRoute = '') %}
-<footer>
-    <div class="footer__navs">
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Impressum" }}"><a class="nav-item__link" href="/impressum">Impressum</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "Datenschutz" }}"><a class="nav-item__link" href="/datenschutz">Datenschutz</a></li>
-        <li class="nav-item {{ "nav-item--active" if activeRoute == "CookieEinstellungen" }}"><a class="nav-item__link" href="/cookie-einstellungen">Cookie-Einstellungen</a></li>
-    </div>
-    <div class="footer__copyright">@ 2021 Copyright: mundart-sprachtherapie.de</div>
-</footer>
+<!-- TODO -->
 {% endmacro %}

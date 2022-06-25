@@ -19,6 +19,7 @@
     "browser-sync": "^2.26.14",
     "faucet-pipeline-js": "^2.1.7",
     "faucet-pipeline-nunjucks": "0.2.0",
+    "faucet-pipeline-sass": "^1.7.1",
     "faucet-pipeline-static": "^1.2.0",
     "http-proxy-middleware": "^1.1.0",
     "marked": "^2.0.3",

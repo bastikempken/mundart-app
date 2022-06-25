@@ -16,10 +16,22 @@ module.exports = {
         target: `./dist/${site}.html`,
         markdown: true
     })),
+    sass: [{
+        source: "./src/sass/index.scss",
+        target: "./dist/assets/css/app-bundle.css"
+    }],
     static: [
         {
             source: "./assets/",
             target: "./dist/assets/"
+        },
+        {
+            source: "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+            target: "./dist/assets/bootstrap/bootstrap.min.css"
+        },
+        {
+            source: "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+            target: "./dist/assets/bootstrap/bootstrap.min.js"
         }
     ],
     js: [
@@ -28,7 +40,6 @@ module.exports = {
             target: "./dist/assets/app-bundle.js"
         }
     ],
-
     plugins: {
         nunjucks: {
             key: "nunjucks",
@@ -36,5 +47,4 @@ module.exports = {
             bucket: "static"
         }
     },
-
 }

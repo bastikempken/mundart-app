@@ -1,14 +1,36 @@
 {% import "src/fragments/navigation.njk" as navigation %}
-{% import "src/fragments/subpage-header.njk" as subPageHeader %}
+{% import "src/fragments/scripts.njk" as scripts %}
 <html>
-    {% include "src/fragments/header.html" %}
-</html>
+{% include "src/fragments/header.html" %}
+
 <body>
     {{ navigation.navbar('Team') }}
-    {{ subPageHeader.header('Team') }}
-    <script src="/assets/bundle.js"></script>
-    <script src="/assets/app-bundle.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                Picture A
+            </div>
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">Short text.</p>
+                            </li>
+                            <li class="list-group-item">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     {{ navigation.footer() }}
+    {{ scripts.scripts() }}
 </body>
 
-
+</html>
