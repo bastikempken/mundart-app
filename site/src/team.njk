@@ -1,36 +1,46 @@
 {% import "src/fragments/navigation.njk" as navigation %}
-{% import "src/fragments/scripts.njk" as scripts %}
+{% import "src/fragments/team-member.njk" as teamMember %}
 <html>
 {% include "src/fragments/header.html" %}
 
 <body>
-    {{ navigation.navbar('Team') }}
+{{ navigation.navbar('Team') }}
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                Picture A
-            </div>
-            <div class="col-sm-8">
-                <div class="card">
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Short text.</p>
-                            </li>
-                            <li class="list-group-item">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+    <h1>Team</h1>
+    {{ teamMember.teamMember(
+        '/assets/team/alina.jpg',
+        'Alina Krähahn',
+        'Logopädin Bachelor of Health and Communications',
+        '../content/cv-alina-kraehahn.md'
+    ) }}
+
+    {{ teamMember.teamMember(
+        '/assets/team/schaefer.jpg',
+        'R. Schäfer',
+        'Sprachtherapeutin Diplom',
+        '../content/cv-r-schaefer.md'
+    ) }}
+
+    {{ teamMember.teamMember(
+        '/assets/team/monika.jpg',
+        'Monika Mayer',
+        'Sekretariat und Anmeldung',
+        '../content/cv-monika.md'
+    ) }}
+
+    {{ teamMember.teamMember(
+        '/assets/team/sookie.jpg',
+        'Sookie',
+        'Unser Therapiebegleithund',
+        ''
+
+    ) }}
 
 
-    {{ navigation.footer() }}
-    {{ scripts.scripts() }}
+</div>
+{{ navigation.footer() }}
+{% include "src/fragments/scripts.html" %}
+<script src="/assets/team.js"></script>
 </body>
-
 </html>

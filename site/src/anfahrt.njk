@@ -1,12 +1,11 @@
 {% import "src/fragments/navigation.njk" as navigation %}
-{% import "src/fragments/scripts.njk" as scripts %}
 <html>
     {% include "src/fragments/header.html" %}
 </html>
 <body>
     {{ navigation.navbar('Anfahrt') }}
     {{ navigation.footer() }}
-    {{ scripts.scripts() }}
+    {% include "src/fragments/scripts.html" %}
 </body>
 
 

@@ -3,8 +3,11 @@
     {% include "src/fragments/header.html" %}
 </html>
 <body>
-    {{ navigation.navbar() }}
-    {{ navigation.footer('Impressum') }}
+    {{ navigation.navbar('Fragen') }}
+    <main>
+        <h1>Fragen</h1>
+    </main>
+    {{ navigation.footer() }}
     {% include "src/fragments/scripts.html" %}
 </body>
 

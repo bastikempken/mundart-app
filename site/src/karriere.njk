@@ -3,7 +3,13 @@
     {% include "src/fragments/header.html" %}
 </html>
 <body>
-    {{ navigation.navbar('Kontakt') }}
+    {{ navigation.navbar('Karriere') }}
+    <main>
+        <h1>Wir stellen ein</h1>
+        {% markdown %}
+            {% include './content/karriere.md' %}
+        {% endmarkdown %}
+    </main>
     {{ navigation.footer() }}
     {% include "src/fragments/scripts.html" %}
 </body>

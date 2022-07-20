@@ -1,5 +1,8 @@
 const sites = ["index",
     "tiergestuetzte-therapie",
+    "karriere",
+    "praxis",
+    "fragen",
     "team",
     "anfahrt",
     "kontakt",
@@ -32,12 +35,36 @@ module.exports = {
         {
             source: "./node_modules/bootstrap/dist/js/bootstrap.min.js",
             target: "./dist/assets/bootstrap/bootstrap.min.js"
+        },
+        {
+            source: "./node_modules/lightbox2/dist/css/lightbox.min.css",
+            target: "./dist/assets/lightbox2/lightbox.min.css"
+        },
+        {
+            source: "./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js",
+            target: "./dist/assets/lightbox2/lightbox.js"
+        },
+        {
+            source: "./node_modules/lightbox2/dist/images/",
+            target: "./dist/assets/images/"
+        },
+        {
+            source: "./node_modules/bootstrap-icons/icons/",
+            target: "./dist/assets/bootstrap-icons/"
+        },
+        {
+            source: "./node_modules/bootstrap-icons/icons/",
+            target: "./dist/assets/bootstrap-icons/"
         }
     ],
     js: [
         {
             source: "./src/js/index.js",
             target: "./dist/assets/app-bundle.js"
+        },
+        {
+            source: "./src/js/team.js",
+            target: "./dist/assets/team.js"
         }
     ],
     plugins: {

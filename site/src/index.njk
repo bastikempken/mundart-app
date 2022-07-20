@@ -1,5 +1,4 @@
 {% import "src/fragments/navigation.njk" as navigation %}
-{% import "src/fragments/scripts.njk" as scripts %}
 <!-- -->
 {% set items = [
     "picture_01_web.jpg",
@@ -62,8 +61,35 @@
         {% markdown %}
         {% include './content/corona-info.md' %}
         {% endmarkdown %}
+
+        <div style="text-align: center;">
+            <img
+                    src="/assets/logo.svg"
+                    width="300"
+                    href=""
+                    height=""
+                    class="d-inline-block align-top"
+                    alt="Mundart Logo"
+            />
+
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; margin-bottom: 10px">
+            <a href="https://www.dbl-ev.de/">
+                <img
+                        src="/assets/logo-dbl.gif"
+                        width="200"
+                        href=""
+                        height=""
+                        class="d-inline-block align-top"
+                        alt="Dbl Logo"
+                />
+            </a>
+
+        </div>
+
     </main>
     {{ navigation.footer() }}
-    {{ scripts.scripts() }}
+    {% include "src/fragments/scripts.html" %}
 </body>
 </html>

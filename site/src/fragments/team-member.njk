@@ -1,0 +1,33 @@
+{% macro teamMember(picture, name, title, content) %}
+    <div class="row">
+        <div class="col-sm-4">
+            <img
+                    alt=""
+                    src="{{ picture }}"
+                    class="img-thumbnail"
+            />
+        </div>
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="card-title">{{ name }}</h5>
+                            <p class="card-text"> {{ title }}</p>
+                        </li>
+                        {% if content %}
+                        <div style="text-align: center;">
+                            <img src="/assets/bootstrap-icons/chevron-down.svg" width="32" height="32">
+                        </div>
+                        <li class="list-group-item list-group-item__toggle list-group-item--hidden">
+                            {% markdown %}
+                                {% include content %}
+                            {% endmarkdown %}
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

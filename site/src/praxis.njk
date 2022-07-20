@@ -1,0 +1,80 @@
+{% import "src/fragments/navigation.njk" as navigation %}
+<html>
+{% include "src/fragments/header.html" %}
+</html>
+<body>
+{{ navigation.navbar('Praxis') }}
+<main>
+    <h1>Praxis</h1>
+
+    <a alt="" href="/assets/praxis/picture_01_web.jpg" data-lightbox="roadtrip" data-title="Außenwerbung">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_01_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_02_web.jpg" data-lightbox="roadtrip" data-title="Zugang zu eigenen Parkplätzen">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_02_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_03_web.jpg" data-lightbox="roadtrip" data-title="">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_03_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_04_web.jpg" data-lightbox="roadtrip" data-title="Eingangsbereich">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_04_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_05_web.jpg" data-lightbox="roadtrip" data-title="Barrierefreier Eingangsbereich">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_05_thumb.jpg"/>
+    </a>
+    <a alt="" href="/assets/praxis/picture_06_web.jpg" data-lightbox="roadtrip" data-title="Anmeldung">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_06_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_07_web.jpg" data-lightbox="roadtrip" data-title="Wartebereich" >
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_07_thumb.jpg"/>
+    </a>
+    <a alt="" href="/assets/praxis/picture_17_web.jpg" data-lightbox="roadtrip" data-title="Spielecke">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_17_thumb.jpg"/>
+    </a>
+    <a alt="" href="/assets/praxis/picture_08_web.jpg" data-lightbox="roadtrip" data-title="Therapieraum 1">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_08_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_09_web.jpg" data-lightbox="roadtrip" data-title="Therapieraum 2">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_09_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_10_web.jpg" data-lightbox="roadtrip" data-title="Therapieraum 3">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_10_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_11_web.jpg" data-lightbox="roadtrip" data-title="">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_11_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_12_web.jpg" data-lightbox="roadtrip" data-title="">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_12_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_13_web.jpg" data-lightbox="roadtrip" data-title="">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_13_thumb.jpg"/>
+    </a>
+
+    <a alt="" href="/assets/praxis/picture_14_web.jpg" data-lightbox="roadtrip" data-title="">
+        <img alt="" class="example-image" src="/assets/praxis/thumb/picture_14_thumb.jpg"/>
+    </a>
+
+</main>
+{{ navigation.footer() }}
+{% include "src/fragments/scripts.html" %}
+<script src="/assets/lightbox2/lightbox.js"></script>
+<script>
+    lightbox2.option({
+        resizeDuration: 200,
+        wrapAround: true,
+        enableRotation: false
+    });
+</script>
+</body>
+
+
