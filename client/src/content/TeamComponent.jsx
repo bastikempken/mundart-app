@@ -5,6 +5,7 @@ import * as alinaConstants from "./team/AlinaConstants";
 import * as schaeferConstants from "./team/SchaeferConstants";
 import * as monikaConstants from "./team/MonikaConstants";
 import * as hundeConstants from "./team/HundeConstants";
+import * as jasminConstants from "./team/JasminConstants";
 import { LOADING_ON, LOADING_OFF } from "../reducers/action-types";
 
 import { Container } from "react-bootstrap";
@@ -21,7 +22,7 @@ class TeamComponent extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.state.picLoaded >= 4) {
+    if (this.state.picLoaded >= 5) {
       this.props.loadingOff();
     }
   }
@@ -44,6 +45,10 @@ class TeamComponent extends React.Component {
         />
         <TeamMemberComponent
           constants={schaeferConstants}
+          picLoadedCallback={this.picLoadedCallback}
+        />
+        <TeamMemberComponent
+          constants={jasminConstants}
           picLoadedCallback={this.picLoadedCallback}
         />
         <TeamMemberComponent
