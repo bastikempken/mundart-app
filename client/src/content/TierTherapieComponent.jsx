@@ -46,7 +46,7 @@ class TierTherapieComponent extends React.Component {
               anderen Leute kaum zu sprechen und alles über Gesten zu
               vermitteln. Dies stößt natürlich schnell an seine Grenzen. Lara
               ist frustriert und wird sehr schnell wütend. Sie kommt zur
-              Therapie. Auch mit der Therapeutin mag sie nicht reden. Mit Lino,
+              Therapie. Auch mit der Therapeutin mag sie nicht reden. Mit Sookie,
               unserem Therapiehund, verhält es sich anders. Sie krault ihn,
               flüstert ihm Geheimnisse ins Ohr und erzählt was sie im
               Kindergarten gemacht hat. Er hört aufmerksam zu und wedelt mit der
@@ -90,8 +90,8 @@ class TierTherapieComponent extends React.Component {
             <p>
               <i>Beispiel:</i> Mina, 9 Jahre, hat ein Therapieziel in kürzester
               Zeit erreicht. Die Therapeutin lobt sie und fragt was sie zur
-              Belohnung spielen möchte. Mina möchte mit Lino einige Kunststücke
-              machen. Lino wird gerufen. Mina gibt Kommandos die Lino vorführt.
+              Belohnung spielen möchte. Mina möchte mit Sookie einige Kunststücke
+              machen. Sookie wird gerufen. Mina gibt Kommandos die Sookie vorführt.
               Sie freut sich! Er hat sie verstanden und alles richtig gemacht.
               Sie lobt ihn ausgiebig. Hier durfte Mina jetzt die Rolle der
               Therapeutin einnehmen und die „Gebende“ spielen, anstatt nur die
@@ -129,7 +129,7 @@ class TierTherapieComponent extends React.Component {
           sich über unsere Hunde. Wir arbeiten auch einmal die Woche
           ehrenamtlich in einem Pflegeheim mit unseren Tieren. Die Gruppe
           besteht aus jungen wie älteren Erwachsenen, die dort leben. Eine
-          Stunde lang geht es bei „Fit im Kopf mit Sookie und Lino“ um
+          Stunde lang geht es bei „Fit im Kopf mit Sookie“ um
           interessante und lustige Aufgaben zur Merkfähigkeit, Sprache und viele
           andere Themen. &#9786;
         </p>
