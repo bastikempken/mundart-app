@@ -11,7 +11,7 @@ Logopädin
 
 export const text = (
   <Fragment>
-    geb. 01.01.2011 in Düsseldorf<br />
+    geb. 01.01.2001 in Düsseldorf<br />
     <br />
     <strong>Ausbildung:</strong>
     <ul>
