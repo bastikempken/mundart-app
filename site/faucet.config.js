@@ -23,11 +23,11 @@ module.exports = {
         source: "./src/sass/index.scss",
         target: "./dist/assets/css/app-bundle.css"
     }],
+    images: [{
+        source: "./assets",
+        target: "./dist/assets/"
+    }],
     static: [
-        {
-            source: "./assets/",
-            target: "./dist/assets/"
-        },
         {
             source: "./node_modules/bootstrap/dist/css/bootstrap.min.css",
             target: "./dist/assets/bootstrap/bootstrap.min.css"
@@ -71,11 +71,12 @@ module.exports = {
             target: "./dist/assets/kontakt.js"
         }
     ],
-    plugins: {
-        nunjucks: {
+    plugins: [
+        {
             key: "nunjucks",
             plugin: "faucet-pipeline-nunjucks",
             bucket: "static"
-        }
-    },
+        },
+        require("faucet-pipeline-images")
+    ],
 }
