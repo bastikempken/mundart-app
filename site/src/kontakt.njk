@@ -4,8 +4,50 @@
 </html>
 <body>
     {{ navigation.navbar('Kontakt') }}
+    <main>
+    <h2>Adresse</h2>
+    <p>
+        Römerstraße 365 A<br />
+        47178 Duisburg
+    </p>
+    <h2>Öffnungszeiten</h2>
+    <p>
+        Montag - Donnerstag: 08:00 – 18:30
+        <br />
+        Freitag: 08:00 – 17:00
+        <br /> Samstag: geschlossen
+        <br /> Sonntag: geschlossen
+    </p>
+    <h2>Telefon</h2>
+    <p>
+        Telefon: +49 203/93451097
+        <br />
+        Telefax: +49 203/93451098
+        <br />
+        Mobil: +49 170/4917479 <br />
+    </p>
+    <h2>Social Media</h2>
+        <img src="/assets/facebook-logo.png" class="img-thumbnail">
+    <h2>Email</h2>
+        <form>
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input name="name" required type="text" class="form-control form-control-lg" id="inputName" placeholder="Name eingeben"/>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input name="sender" required type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email eingeben"/>
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Nachricht</label>
+                <textarea name="content" required class="form-control form-control-lg" id="inputMessage" rows="3" placeholder="Nachricht eingeben"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Abschicken</button>
+        </form>
+    </main>
     {{ navigation.footer() }}
     {% include "src/fragments/scripts.html" %}
+    <script src="/assets/kontakt.js"></script>
 </body>
 
 

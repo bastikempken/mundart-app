@@ -1,11 +1,16 @@
 {% import "src/fragments/navigation.njk" as navigation %}
 <html>
-    {% include "src/fragments/header.html" %}
+{% include "src/fragments/header.html" %}
 </html>
 <body>
-    {{ navigation.navbar() }}
-    {{ navigation.footer('Impressum') }}
-    {% include "src/fragments/scripts.html" %}
+{{ navigation.navbar('Impressum') }}
+<main>
+    {% markdown %}
+        {% include './content/impressum.md' %}
+    {% endmarkdown %}
+</main>
+{{ navigation.footer() }}
+{% include "src/fragments/scripts.html" %}
 </body>
 
 

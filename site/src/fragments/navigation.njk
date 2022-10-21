@@ -1,55 +1,66 @@
 {% macro navbar(activeRoute = '') %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img
-            src="assets/logo.svg"
-            width="100"
-            href=""
-            height=""
-            class="d-inline-block align-top"
-            alt="Mundart Logo"
-            >
-        </img>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Home" }}" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Team" }}" href="/team">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Karriere" }}" href="/karriere">Karriere</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Praxis" }}" href="/praxis">Praxis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Fragen" }}" href="/fragen">Fragen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="TiergestuetzteTherapie" }}"
-                        href="/tiergestuetzte-therapie">Tiergestützte Therapie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Anfahrt" }}" href="/anfahrt">Anfahrt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ " active" if activeRoute=="Kontakt" }}" href="/kontakt">Kontakt</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img
+                        src="assets/logo.svg"
+                        width="100"
+                        href=""
+                        height=""
+                        class="d-inline-block align-top"
+                        alt="Mundart Logo"
+                >
+                </img>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Home" }}" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Team" }}" href="/team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Karriere" }}" href="/karriere">Karriere</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Praxis" }}" href="/praxis">Praxis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Fragen" }}" href="/fragen">Fragen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="TiergestuetzteTherapie" }}"
+                           href="/tiergestuetzte-therapie">Tiergestützte Therapie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Anfahrt" }}" href="/anfahrt">Anfahrt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Kontakt" }}" href="/kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Impressum" }}" href="/impressum">Impressum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ " active" if activeRoute=="Datenschutzerklärung" }}" href="/datenschutz">
+                            Datenschutzerklärung</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 {% endmacro %}
 
 
 {% macro footer(activeRoute = '') %}
-<!-- TODO -->
+    <footer class="bg-light text-center">
+        © 2022 Copyright: mundart-sprachtherapie.de
+    </footer>
+    <!-- TODO -->
 {% endmacro %}

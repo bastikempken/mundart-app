@@ -65,6 +65,10 @@ module.exports = {
         {
             source: "./src/js/team.js",
             target: "./dist/assets/team.js"
+        },
+        {
+            source: "./src/js/kontakt.js",
+            target: "./dist/assets/kontakt.js"
         }
     ],
     plugins: {

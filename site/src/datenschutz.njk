@@ -3,7 +3,12 @@
     {% include "src/fragments/header.html" %}
 </html>
 <body>
-    {{ navigation.navbar() }}
+    {{ navigation.navbar('Datenschutzerklärung') }}
+    <main>
+        {% markdown %}
+            {% include './content/datenschutz.md' %}
+        {% endmarkdown %}
+    </main>
     {% include "src/fragments/scripts.html" %}
 </body>
 

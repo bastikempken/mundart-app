@@ -6,6 +6,8 @@
 <body>
 {{ navigation.navbar('Team') }}
 
+<main>
+
 <div class="container">
     <h1>Team</h1>
     {{ teamMember.teamMember(
@@ -20,6 +22,13 @@
         'R. Schäfer',
         'Sprachtherapeutin Diplom',
         '../content/cv-r-schaefer.md'
+    ) }}
+
+    {{ teamMember.teamMember(
+        '/assets/team/jasmin.jpg',
+        'Jasmin Budeus',
+        'Logopädin',
+        '../content/cv-jasmin.md'
     ) }}
 
     {{ teamMember.teamMember(
@@ -39,6 +48,7 @@
 
 
 </div>
+</main>
 {{ navigation.footer() }}
 {% include "src/fragments/scripts.html" %}
 <script src="/assets/team.js"></script>

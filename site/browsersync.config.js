@@ -2,7 +2,7 @@
 const bs = require("browser-sync").create();
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const proxy = createProxyMiddleware(['/emailSubmit', '/fbposts'], { target: 'http://localhost:9000' });
+const proxy = createProxyMiddleware(['/.netlify/functions/emailSubmit', '/fbposts'], { target: 'http://localhost:9000' });
 
 bs.init({
     port: 8080,
@@ -21,4 +21,6 @@ bs.init({
     middleware: [proxy]
 });
 
-bs.reload();
+console.log('init')
+
+bs.reload("*.html");

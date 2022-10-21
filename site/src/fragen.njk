@@ -5,7 +5,9 @@
 <body>
     {{ navigation.navbar('Fragen') }}
     <main>
-        <h1>Fragen</h1>
+        {% markdown %}
+            {% include './content/fragen.md' %}
+        {% endmarkdown %}
     </main>
     {{ navigation.footer() }}
     {% include "src/fragments/scripts.html" %}
