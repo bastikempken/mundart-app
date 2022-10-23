@@ -20,12 +20,12 @@
    xml:space="preserve"
    xml="http://www.w3.org/XML/1998/namespace"
    enable-background="new 0 0 300 300"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="vector-2.svg"
    style="font-size:0px;overflow:inherit"
-   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"><metadata
+   inkscape:version="0.92.3 (d244b95, 2018-08-02)"><metadata
    id="metadata91"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs89" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -35,18 +35,17 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1792"
-   inkscape:window-height="1067"
+   inkscape:window-width="1920"
+   inkscape:window-height="1025"
    id="namedview87"
    showgrid="false"
    inkscape:zoom="2.7966667"
    inkscape:cx="77.592373"
    inkscape:cy="45.1795"
    inkscape:window-x="0"
-   inkscape:window-y="25"
+   inkscape:window-y="27"
    inkscape:window-maximized="1"
-   inkscape:current-layer="Layer_1"
-   inkscape:document-rotation="0" />
+   inkscape:current-layer="Layer_1" />
   <g
    id="myid_9_"
    xml:space="preserve"
@@ -68,7 +67,7 @@
    width="247"
    height="56.599998"
    xml:space="preserve"
-   style="fill:#ffffff;fill-opacity:1"
+   style="fill:#f8f9fa;fill-opacity:1"
    id="rect14" />
   <g
    xml:space="preserve"
