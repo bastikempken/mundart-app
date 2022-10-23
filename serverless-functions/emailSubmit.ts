@@ -10,6 +10,7 @@ exports.handler = function (
     callback: APIGatewayProxyCallback
 ) {
 
+
     const content = event.body.split('&').reduce((acc, v) => {
         let x = v.split("=")
         const key = x[0]

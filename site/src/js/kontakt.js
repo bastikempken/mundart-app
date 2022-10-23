@@ -4,10 +4,16 @@ const handleSubmit = (event) => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
+    const partialEncoded = []
+    formData.forEach((value, key) => {
+        let partial = key + '=' + encodeURIComponent(value)
+        partialEncoded.push(partial)
+    })
+
     fetch("/.netlify/functions/emailSubmit", {
         method: "POST",
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
-        body: new URLSearchParams(formData).toString(),
+        body: partialEncoded.join('&'),
     })
         .then((response) => {
             if (!response.ok) {

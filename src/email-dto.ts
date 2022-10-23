@@ -45,7 +45,6 @@ export class Builder {
     return this;
   }
   build() {
-    console.log("BUILDER", this);
     return new Email(this);
   }
 }
