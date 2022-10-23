@@ -19,6 +19,7 @@ const createTransporter = () =>
   nodemailer.createTransport({
     port: process.env.mail_port,
     host: process.env.mail_host,
+    secure: true,
     auth: {
       user: process.env.mail_username,
       pass: process.env.mail_password,
@@ -29,13 +30,11 @@ export const sendEmail = async (emailRequest: EmailRequest): Promise<void> => {
   try {
     const transporter = createTransporter();
     const optionsToPraxis = sendToPraxis(emailRequest);
-    await transporter.sendMail(optionsToPraxis, () =>
-      console.log("SUCCESS > Email To Praxis")
-    );
+    let statusEmailToPraxis = await transporter.sendMail(optionsToPraxis);
+    console.log("Message sent: %s", statusEmailToPraxis.messageId)
     const optionsToCustomer = sendToCustomer(emailRequest);
-    await transporter.sendMail(optionsToCustomer, () =>
-      console.log("SUCCESS > Email To Customer")
-    );
+    let statusEmailToCustomer = await transporter.sendMail(optionsToCustomer);
+    console.log("Message sent: %s", statusEmailToCustomer.messageId)
   } catch (error) {
     throw error;
   }
