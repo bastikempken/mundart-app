@@ -24,3 +24,5 @@ geb. 1974 in Essen
 * Aphasien
 * Die integrierte Myofunktionstherapie nach Passon in enger Zusammenarbeit mit Zahnärzten und Kieferorthopäden
 * LAX VOX – Die Übung zur Pflege, Heilung und Schulung der Stimme – Eine Einführung
+* Restaphasien
+* Co- Therapeut auf 4 Pfoten

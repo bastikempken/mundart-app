@@ -14,7 +14,7 @@ Studium an der Hogeschool van Arnhem en Nijmegen mit dem Abschluss Bachelor of H
 * myofunktionelle Therapie bei Kindern
 * Der Therapiebegleithund in der Logopädie - eine Einführung
 * Einführung in die orofaziale Regulationstherapie nach Rodolfo Castillo Morales
-* Hier kommen die kleinsten zu Wort - Sprachbildung för U-3 Kinder
+* Hier kommen die kleinsten zu Wort - Sprachbildung für U-3 Kinder
 * Kompaktseminar: Kieler Leseaufbau und Kieler Rechtschreibaufbau
 * Die integrierte Myo­funktions­therapie nach Passon in enger Zusammenarbeit mit Zahnärzten und Kieferorthopäden
 * Logopädische Anwendungen mit dem NOVAFON
@@ -22,3 +22,10 @@ Studium an der Hogeschool van Arnhem en Nijmegen mit dem Abschluss Bachelor of H
 * Roter Faden in der Grammatiktherapie
 * Diagnostik und Therapie bei Kindern mit auditiven Verarbeitungsstörungen
 * Der Wortschatzsammler
+* Früherfassung und Frühtherapie nach Barbara Zollinger
+* Diagnostik und Therapie von Kindern im Vorschulalter 
+* Artikulationstherapie: Tipps und Tricks bei erschwerter Lautanbahnung
+* Ganzheitliche oder sprachspezifische Therapie. Wie therapiere ich Kinder mit Late Talker Sprachprofil?
+* Beratung von Eltern stotternder Kinder im Vorschulalter
+* Stottern effektiv modifizieren
+* Gedächtnisstörungen im Alter 
