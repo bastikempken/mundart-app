@@ -18,7 +18,7 @@
   "scripts": {
     "build": "netlify-lambda build serverless-functions",
     "serve": "netlify-lambda serve serverless-functions",
-    "site:install": "npm --prefix ./site install",
+    "site:install": "npm --prefix ./site install --force",
     "site:start": "cd ./site && npm run start",
     "site:compile": "npm --prefix ./site run compile",
     "prettier": "./node_modules/prettier/bin-prettier.js --write '{src,site/src}/**/*.{html,njk}'"
