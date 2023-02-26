@@ -2,8 +2,8 @@
 
 ## Tierische Mitarbeiter in der logopädischen Praxis Krähahn?
 
-In unserer Praxis haben wir zwei Therapiebegleithunde. Sie hören auf die Namen Lino (Labrador – Australian Sheperd Mix)
-und Sookie (Nova Scotia Duck Tolling Retriever). Falls es gewünscht ist oder eine Indikation von unserer Seite zur
+In unserer Praxis haben wir einen Therapiebegleithund. Sie hört auf den Namen Sookie (Nova Scotia Duck Tolling
+Retriever). Falls es gewünscht ist oder eine Indikation von unserer Seite zur
 tiergestützten Therapie besteht, besprechen wir dies mit allen Beteiligten. Wenn sich alle über diese tierische
 Zusammenarbeit freuen, steht dem nichts mehr im Wege.
 
@@ -23,7 +23,8 @@ Voraussetzungen, eine extreme Bereicherung für die logopädische Therapie sein 
    <em>Beispiel:</em> Lara, 4 Jahre, spricht sehr unverständlich. Außer der Mutter versteht sie niemand. Sie ist dazu
    übergegangen mit anderen Leute kaum zu sprechen und alles über Gesten zu vermitteln. Dies stößt natürlich schnell an
    seine Grenzen. Lara ist frustriert und wird sehr schnell wütend. Sie kommt zur Therapie. Auch mit der Therapeutin mag
-   sie nicht reden. Mit Sookie, unserem Therapiehund, verhält es sich anders. Sie krault ihn, flüstert ihm Geheimnisse ins
+   sie nicht reden. Mit Sookie, unserem Therapiehund, verhält es sich anders. Sie krault ihn, flüstert ihm Geheimnisse
+   ins
    Ohr und erzählt was sie im Kindergarten gemacht hat. Er hört aufmerksam zu und wedelt mit der Rute. Lara freut sich
    und beginnt auch die Therapeutin mit in den Dialog einzubeziehen.
    Das Eis ist gebrochen und Lara kommuniziert mit Freude. Der erste Schritt hin zu einer erfolgreichen Therapie ist
@@ -45,8 +46,10 @@ Voraussetzungen, eine extreme Bereicherung für die logopädische Therapie sein 
    die Kinder spielerisch anhand des Hundes, dass sie mit ihrer Sprache etwas erreichen können.
 
    <em>Beispiel:</em> Mina, 9 Jahre, hat ein Therapieziel in kürzester Zeit erreicht. Die Therapeutin lobt sie und fragt
-   was sie zur Belohnung spielen möchte. Mina möchte mit Sookie einige Kunststücke machen. Sookie wird gerufen. Mina gibt
-   Kommandos die Sookie vorführt. Sie freut sich! Er hat sie verstanden und alles richtig gemacht. Sie lobt ihn ausgiebig.
+   was sie zur Belohnung spielen möchte. Mina möchte mit Sookie einige Kunststücke machen. Sookie wird gerufen. Mina
+   gibt
+   Kommandos die Sookie vorführt. Sie freut sich! Er hat sie verstanden und alles richtig gemacht. Sie lobt ihn
+   ausgiebig.
    Hier durfte Mina jetzt die Rolle der Therapeutin einnehmen und die „Gebende“ spielen, anstatt nur die zu sein, die
    „empfängt“.
 
